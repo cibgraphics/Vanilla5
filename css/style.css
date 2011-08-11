@@ -1,0 +1,450 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+
+Added reset by Christopher Bishop
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+
+/* Tell the browser to render HTML 5 elements as block */ 
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+a:focus, img {
+	outline: none; /* Removes dotted outline caused by FireFox */
+	border: none;	/* Removes purple border caused by FireFox */
+} 
+
+
+
+/*
+-----------------------------------------
+Start the Styling of your Site Here
+-----------------------------------------
+*/
+
+
+
+
+/*
+-----------------------------------------
+CSS3 Background Highlights
+Try to make the background match the main color of your site and make the color easy to read by contrasting the background. 
+Make both sections the same.
+-----------------------------------------
+*/
+
+::-moz-selection{
+	background: ;
+	color: ;
+} 
+::selection {
+	background: ;
+	color: ;
+}
+
+
+
+/*
+-----------------------------------------
+HEAD TAGS
+-----------------------------------------
+*/
+
+
+HTML {
+	
+}
+
+BODY {
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+
+
+/*
+-----------------------------------------
+CONTAINER
+-----------------------------------------
+*/
+
+
+#container {
+	width: 960px;
+	margin: 0 auto;
+}
+
+#content {
+	width: 960px;
+}
+
+
+
+
+/*
+-----------------------------------------
+HEADERS
+-----------------------------------------
+*/
+
+
+h1 {
+	
+}
+
+h2 {
+	
+}
+
+h3 {
+	
+}
+
+h4 {
+	
+}
+
+h5 {
+	
+}
+
+h6 {
+	
+}
+
+
+/*
+-----------------------------------------
+BASICS
+-----------------------------------------
+*/
+
+
+a {
+	color: ;
+}
+
+a:hover {
+	color: ;
+	text-decoration: none;
+}
+
+p {
+	
+}
+
+
+/*
+-----------------------------------------
+SECONDARY BASICS
+-----------------------------------------
+*/
+
+
+blockquote {
+	
+}
+
+.hr { 
+	/* instead of using an hr tag (which is actually more semantic), a div with this class will allow for easier styling */
+}
+
+.clear {
+	clear: both;
+}
+
+
+/*
+-----------------------------------------
+BRANDING
+-----------------------------------------
+*/
+
+
+header#masthead {
+	width: 960px;
+	height: ;
+	position: relative;
+}
+
+header#masthead div#logo a{
+	display: block;
+	height: ;
+	width: ;
+	position: absolute;
+	top: ;
+	left: ;
+	text-indent: -9999px;
+	background: url(images/logo.png) no-repeat;
+}
+
+/*
+-----------------------------------------
+NAVIGATION
+-----------------------------------------
+*/
+
+
+header#masthead ul {
+	list-style: none;
+	position: absolute;
+	top: ;
+	left: ;
+}
+
+header#masthead ul li {
+	
+}
+
+header#masthead ul li a {
+	
+}
+
+header#masthead ul li a:hover {
+	
+}
+
+
+
+/*
+-----------------------------------------
+ARTICLE (left side)
+-----------------------------------------
+*/
+
+
+article {
+	width: ;
+	float: left;
+	display: inline;
+}
+
+
+
+/*
+-----------------------------------------
+ASIDE (right side)
+-----------------------------------------
+*/
+
+
+aside {
+	width: ;
+	float: right;
+	display: inline;
+}
+
+
+
+/*
+-----------------------------------------
+FOOTER
+-----------------------------------------
+*/
+
+
+footer#siteFooter {
+	width: 960px;
+	height: ;
+}
+
+
+
+
+/*
+-----------------------------------------
+TABLES
+-----------------------------------------
+*/
+
+
+table {
+	
+}
+
+thead {
+	
+}
+
+tfoot {
+	
+}
+
+tbody {
+	
+}
+
+tr {
+	
+}
+
+th {
+	
+}
+
+td {
+	
+}
+
+
+/*
+-----------------------------------------
+FORMS
+-----------------------------------------
+*/
+
+
+form {
+	
+}
+
+label{
+	
+}
+
+input {
+	
+}
+
+textarea {
+	
+}
+
+
+
+
+
+/*
+-----------------------------------------
+GENERICS (used for testing)
+-----------------------------------------
+*/
+
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.text_left {
+	text-align: left;
+}
+
+.text_center {
+	text-align: center;
+}
+
+.text_right {
+	text-align: right;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.red {
+	background: red; /* Used for testing */
+}

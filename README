@@ -1,0 +1,18 @@
+HTML5 Vanilla Site Template v0.8
+
+Copyright Christopher Bishop 2011.
+
+You may use this template free of charge with no link backs whatsoever. You may NOT sell this, only give it away to others. If you do give it away, you must credit me by leaving this README with the files unchanged as well as the HTML comments.
+
+
+Notes-
+
+Features:
+- Basic HTML5 template with a header, two columns, and a footer
+- Basic CSS file set up. Just enter your widths, and colors. It doesn't do everything for you, it's just a starter file.
+- Links to jQuery and jQueryUI so you can get started right away.
+- Folders setup for admin, images, and creative.
+- PSD included for the 960grid.
+- Javascript and CSS to fix HTML5 support for IE
+
+If you create a webpage using this template, let me know by sending me a message from www.cibgraphics.com/contact

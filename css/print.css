@@ -1,1 +1,38 @@
 /* Print Styles */
+
+body {
+   background: white;
+   font-size: 12pt;
+}
+
+#masthead nav {
+   display: none;
+}
+
+#container {
+   width: auto;
+   margin: 0 5%;
+   padding: 0;
+   border: 0;
+   float: none !important;
+   color: black;
+   background: transparent none;
+}
+
+div#content {
+   margin-left: 10%;
+   padding-top: 1em;
+   border-top: 1px solid #930;
+}
+
+a:link, a:visited {
+   color: #520;
+   background: transparent;
+   font-weight: bold;
+   text-decoration: underline;
+}
+
+#content a:link:after, #content a:visited:after {
+   content: " (" attr(href) ") ";
+   font-size: 90%;
+}

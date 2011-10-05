@@ -1,3 +1,3 @@
 $(document).ready(function() {
-	$('nav').tabs();
+	// put all your jQuery goodness here
 });

@@ -16,3 +16,58 @@ Features:
 - Javascript and CSS to fix HTML5 support for IE
 
 If you create a webpage using this template, let me know by sending me a message from www.cibgraphics.com/contact
+
+ChangeLog:
+Version 0.9.5:
+
+    Updated CDN
+    JS Fallback if CDN not available
+    CSS fixes
+
+Version 0.9:
+
+    New Name!!
+    Template for Wordpress
+    Added reset for print
+    HTML and CSS for responsive web design
+
+Version 0.8:
+
+    Updated CDN links to newest version
+    Deleted CSS3 helpers
+    Better base CSS
+    CSS for Tables
+
+Version 0.7.5:
+
+    Updated CDN links to newest version
+    General CSS additions
+
+Version 0.7:
+
+    Updated CDN links to newest version
+    Added support for Chrome Frame
+    Better element id’s
+    Link for iOS icon
+
+Version 0.6:
+
+    Better CSS reset
+    Added CSS3 background selection
+
+Version 0.5:
+
+    Link for favicon
+    Comments for main closing tags
+    Updated CDN links to newest version
+
+Version 0.4:
+
+    CSS file for print
+    CSS3 helpers on HTML5 kit
+    Added hgroup tag section
+
+Version 0.3:
+
+    Official launch to public
+

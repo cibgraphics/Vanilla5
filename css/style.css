@@ -103,12 +103,12 @@ input, select {
 }
 
 ol, ul {
-	list-style: none;
+  list-style: none;
 }
 
 a:focus, img {
-	outline: none; /* Removes dotted outline caused by FireFox */
-	border: none;	/* Removes purple border caused by FireFox */
+  outline: none; /* Removes dotted outline caused by FireFox */
+  border: none; /* Removes purple border caused by FireFox */
 } 
 
 
@@ -117,6 +117,33 @@ a:focus, img {
 Start the Styling of your Site Here
 -----------------------------------------
 */
+
+
+
+
+
+/*
+-----------------------------------------
+Responsive Web Design Queries
+-----------------------------------------
+*/
+
+
+@media only screen and (max-width: 480px) {
+  
+}
+
+@media only screen and (max-width: 768px) {
+  
+}
+
+@media only screen and (max-width: 992px) {
+  
+}
+
+@media only screen and (min-width: 1382px) {
+  
+}
 
 
 
@@ -130,12 +157,12 @@ Make both sections the same.
 */
 
 ::-moz-selection{
-	background: ;
-	color: ;
+  background: ;
+  color: ;
 } 
 ::selection {
-	background: ;
-	color: ;
+  background: ;
+  color: ;
 }
 
 
@@ -148,11 +175,11 @@ HEAD TAGS
 
 
 HTML {
-	
+  
 }
 
 BODY {
-	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 
@@ -165,12 +192,12 @@ CONTAINER
 
 
 #container {
-	width: 960px;
-	margin: 0 auto;
+  width: 960px;
+  margin: 0 auto;
 }
 
 #content {
-	width: 960px;
+  width: 960px;
 }
 
 
@@ -184,27 +211,27 @@ HEADERS
 
 
 h1 {
-	
+  
 }
 
 h2 {
-	
+  
 }
 
 h3 {
-	
+  
 }
 
 h4 {
-	
+  
 }
 
 h5 {
-	
+  
 }
 
 h6 {
-	
+  
 }
 
 
@@ -216,16 +243,16 @@ BASICS
 
 
 a {
-	color: ;
+  color: ;
 }
 
 a:hover {
-	color: ;
-	text-decoration: none;
+  color: ;
+  text-decoration: none;
 }
 
 p {
-	
+  
 }
 
 
@@ -237,15 +264,15 @@ SECONDARY BASICS
 
 
 blockquote {
-	
+  
 }
 
 .hr { 
-	/* instead of using an hr tag (which is actually more semantic), a div with this class will allow for easier styling */
+  /* instead of using an hr tag (which is actually more semantic), a div with this class will allow for easier styling */
 }
 
 .clear {
-	clear: both;
+  clear: both;
 }
 
 
@@ -257,20 +284,20 @@ BRANDING
 
 
 header#masthead {
-	width: 960px;
-	height: ;
-	position: relative;
+  width: 960px;
+  height: ;
+  position: relative;
 }
 
 header#masthead div#logo a{
-	display: block;
-	height: ;
-	width: ;
-	position: absolute;
-	top: ;
-	left: ;
-	text-indent: -9999px;
-	background: url('images/logo.png') no-repeat;
+  display: block;
+  height: ;
+  width: ;
+  position: absolute;
+  top: ;
+  left: ;
+  text-indent: -9999px;
+  background: url('images/logo.png') no-repeat;
 }
 
 /*
@@ -281,22 +308,22 @@ NAVIGATION
 
 
 header#masthead ul {
-	list-style: none;
-	position: absolute;
-	top: ;
-	left: ;
+  list-style: none;
+  position: absolute;
+  top: ;
+  left: ;
 }
 
 header#masthead ul li {
-	
+  
 }
 
 header#masthead ul li a {
-	
+  
 }
 
 header#masthead ul li a:hover {
-	
+  
 }
 
 
@@ -309,9 +336,9 @@ ARTICLE (left side)
 
 
 article {
-	width: ;
-	float: left;
-	display: inline;
+  width: ;
+  float: left;
+  display: inline;
 }
 
 
@@ -324,9 +351,9 @@ ASIDE (right side)
 
 
 aside {
-	width: ;
-	float: right;
-	display: inline;
+  width: ;
+  float: right;
+  display: inline;
 }
 
 
@@ -339,8 +366,8 @@ FOOTER
 
 
 footer#siteFooter {
-	width: 960px;
-	height: ;
+  width: 960px;
+  height: ;
 }
 
 
@@ -354,31 +381,31 @@ TABLES
 
 
 table {
-	
+  
 }
 
 thead {
-	
+  
 }
 
 tfoot {
-	
+  
 }
 
 tbody {
-	
+  
 }
 
 tr {
-	
+  
 }
 
 th {
-	
+  
 }
 
 td {
-	
+  
 }
 
 
@@ -390,44 +417,19 @@ FORMS
 
 
 form {
-	
+  
 }
 
 label{
-	
+  
 }
 
 input {
-	
+  
 }
 
 textarea {
-	
-}
-
-
-
-/*
------------------------------------------
-Responsive Web Design Queries
------------------------------------------
-*/
-
-
-@media only screen and (min-width: 1382px) {
-	
-}
-
-@media only screen and (max-width: 992px) {
-	
-}
-
-@media only screen and (max-width: 768px) {
-	
-}
-
-@media only screen and (max-width: 480px) {
-	
+  
 }
 
 
@@ -440,33 +442,33 @@ GENERICS (used for testing)
 
 
 .left {
-	float: left;
+  float: left;
 }
 
 .right {
-	float: right;
+  float: right;
 }
 
 .text_left {
-	text-align: left;
+  text-align: left;
 }
 
 .text_center {
-	text-align: center;
+  text-align: center;
 }
 
 .text_right {
-	text-align: right;
+  text-align: right;
 }
 
 .italic {
-	font-style: italic;
+  font-style: italic;
 }
 
 .bold {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 .red {
-	background: red; /* Used for testing */
+  background: red; /* Used for testing */
 }

@@ -252,7 +252,7 @@ a:hover {
 }
 
 p {
-  
+  line-height: 1.4em;
 }
 
 
@@ -303,6 +303,7 @@ header#masthead div#logo a{
 /*
 -----------------------------------------
 NAVIGATION
+Please use the nav element in HTML5
 -----------------------------------------
 */
 
@@ -412,6 +413,7 @@ td {
 /*
 -----------------------------------------
 FORMS
+The idea is to put the form inputs in a ul>li so your submit button doesn't inherit text input styles.
 -----------------------------------------
 */
 
@@ -420,15 +422,27 @@ form {
   
 }
 
-label{
+ul li label{
   
 }
 
-input {
+ul li input {
   
 }
 
-textarea {
+ul li textarea {
+  
+}
+
+ul li select {
+  
+}
+
+ul li option {
+  
+}
+
+input.submit {
   
 }
 
@@ -470,5 +484,5 @@ GENERICS (used for testing)
 }
 
 .red {
-  background: red; /* Used for testing */
+  background: red;
 }

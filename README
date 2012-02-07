@@ -1,6 +1,6 @@
-Vanilla5 Template v0.9.5
+Vanilla5 Template v0.9.6
 
-Copyright Christopher Bishop 2011.
+Copyright Christopher Bishop 2011-2012.
 
 You may use this template free of charge with no link backs whatsoever. You may NOT sell this, only give it away to others. If you do give it away, you must credit me by leaving this README with the files unchanged as well as the HTML comments.
 
@@ -18,6 +18,13 @@ Features:
 If you create a webpage using this template, let me know by sending me a message from www.cibgraphics.com/contact
 
 ChangeLog:
+
+Version 0.9.6:
+
+    Updated CDN & Local JS
+    CSS additions
+    Mobile First media queries
+    
 Version 0.9.5:
 
     Updated CDN

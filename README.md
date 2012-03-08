@@ -1,13 +1,16 @@
 # Vanilla5 Template v1.0
 
-*Copyright Christopher Bishop 2011-2012.
+_Copyright Christopher Bishop 2011-2012._
+
+Vanilla5 is a base starter kit with everything you need for the majority of your project. HTML5 ready. Mobile Ready. Get started on your projects faster with Vanilla5.
 
 You may use this template free of charge with no link backs whatsoever. You may NOT sell this, only give it away to others. If you do give it away, you must credit me by leaving this README with the files unchanged as well as the HTML comments.
 
 
 ##Notes-
 
-Features:
+###Features:
+
 * Basic HTML5 template with a header, two columns, and a footer
 * Basic CSS file set up. Just enter your widths, and colors. It doesn't do everything for you, it's just a starter file.
 * Links to jQuery and jQueryUI so you can get started right away.

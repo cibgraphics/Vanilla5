@@ -6,8 +6,7 @@
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <!--For responsive web design -->
-    <!--<meta name="viewport" content="initial-scale=1.0, width=device-width" /> -->  
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1" />
     
     <title>Vanilla5 Document</title>
     <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -55,29 +54,29 @@
       
     </div><!-- End #container -->
     
-  <!-- Load jQuery & jQueryUI from CDN. If CDN is not available, load from local copy -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
-  <script type="text/javascript">
-    if (typeof jQuery == 'undefined')
-    {
-      document.write(unescape("%3Cscript src='js/jquery.js' type='text/javascript'%3E%3C/script%3E"));
-      document.write(unescape("%3Cscript src='js/jqueryui.js' type='text/javascript'%3E%3C/script%3E"));
-    }
-  </script>
-  <script src="js/custom.js"></script>
-  <script type="text/javascript">
+    <!-- Load jQuery & jQueryUI from CDN. If CDN is not available, load from local copy -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+    <script type="text/javascript">
+      if (typeof jQuery == 'undefined')
+      {
+        document.write(unescape("%3Cscript src='js/jquery.js' type='text/javascript'%3E%3C/script%3E"));
+        document.write(unescape("%3Cscript src='js/jqueryui.js' type='text/javascript'%3E%3C/script%3E"));
+      }
+    </script>
+    <script src="js/custom.js"></script>
+    <script type="text/javascript">
 
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', '']); //Enter tracking code for your Google Analytics between the ''
-    _gaq.push(['_trackPageview']);
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', '']); //Enter tracking code for your Google Analytics between the ''
+      _gaq.push(['_trackPageview']);
 
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
 
-  </script>
+    </script>
   </body>
 </html>

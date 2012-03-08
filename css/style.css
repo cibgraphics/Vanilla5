@@ -486,3 +486,15 @@ GENERICS (used for testing)
 .red {
   background: red;
 }
+
+
+
+/*
+-----------------------------------------
+MOBILE ADJUSTMENTS
+-----------------------------------------
+*/
+
+a:link {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, .2);
+}

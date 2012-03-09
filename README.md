@@ -24,8 +24,9 @@ If you create a webpage using this template, let me know by sending me a message
 
 ####Version 1.0:
 
-* We have Reached Version 1
+* We have Reached Version 1!!!!!
 * Corrected placement of JS
+* Mobile Enhancements
 
 ####Version 0.9.6:
 

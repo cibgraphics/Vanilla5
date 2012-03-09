@@ -119,35 +119,6 @@ Start the Styling of your Site Here
 */
 
 
-
-
-
-/*
------------------------------------------
-Responsive Web Design Queries
------------------------------------------
-*/
-
-
-@media only screen and (max-width: 480px) {
-  
-}
-
-@media only screen and (max-width: 768px) {
-  
-}
-
-@media only screen and (max-width: 992px) {
-  
-}
-
-@media only screen and (min-width: 1382px) {
-  
-}
-
-
-
-
 /*
 -----------------------------------------
 CSS3 Background Highlights
@@ -499,4 +470,28 @@ MOBILE ADJUSTMENTS
 
 a:link {
   -webkit-tap-highlight-color: rgba(0, 0, 0, .2);
+}
+
+
+
+/*
+-----------------------------------------
+Responsive Web Design Queries
+-----------------------------------------
+*/
+
+@media only screen and (min-width: 1382px) {
+  
+}
+
+@media only screen and (max-width: 992px) {
+  
+}
+
+@media only screen and (max-width: 768px) {
+  
+}
+
+@media only screen and (max-width: 480px) {
+  
 }

@@ -244,6 +244,14 @@ blockquote {
   /* instead of using an hr tag (which is actually more semantic), a div with this class will allow for easier styling */
 }
 
+.button {
+  
+}
+
+.button:hover {
+  
+}
+
 .clear {
   clear: both;
 }

@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(function() {
   
   /* Mobile touch events not binded to click but 'touchend'
    Usage:
@@ -13,6 +13,6 @@ $(document).ready(function() {
     touchEndEvent = "mouseUp";
   }
   
-	// Put all your jQuery goodness here
-	
+  // Put all your jQuery goodness here
+  
 });

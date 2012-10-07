@@ -227,6 +227,9 @@ Start the Styling of your Site Here
 
 @base-color: #;
 @content-background: #;
+
+@text-color: #;
+
 @link-color: #;
 @link-hover-light: lighten(@link-color, 10%);
 @link-hover-dark: darken(@link-color, 10%);
@@ -338,7 +341,9 @@ a {
 }
 
 p {
+	font-size: 12px;
   line-height: 1.4em;
+	color: @text-color;
 }
 
 

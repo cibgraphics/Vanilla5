@@ -22,6 +22,11 @@ If you create a webpage using this template, let me know by sending me a message
 
 ###ChangeLog:
 
+####Version 1.2:
+
+* Updated both jQuery and jQueryUI
+* Added styles for easy table cell width
+
 ####Version 1.1:
 
 * Inclusion of LESS Sheet

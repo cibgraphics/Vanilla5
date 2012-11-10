@@ -1,4 +1,4 @@
-# Vanilla5 Template v1.1
+# Vanilla5 Template v1.3
 
 _Copyright Christopher Bishop 2011-2012._
 
@@ -21,6 +21,14 @@ You may use this template free of charge with no link backs whatsoever. You may 
 If you create a webpage using this template, let me know by sending me a message from www.cibgraphics.com/contact
 
 ###ChangeLog:
+
+####Version 1.3:
+
+* Updated jQueryUI to 1.9.1
+* Set up for adaptive font sizes
+* CSS fix for font smoothing when page element gets transformed
+* Adds different method for clearing (non elemental)
+* Fixes anchor focus rendering
 
 ####Version 1.2:
 

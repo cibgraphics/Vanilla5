@@ -243,6 +243,9 @@ SECONDARY BASICS
 -----------------------------------------
 */
 
+* {
+  -webkit-transform-style: preserve-3d; /* prevents font smoothing when something on page gets transformed */
+}
 
 blockquote {
   

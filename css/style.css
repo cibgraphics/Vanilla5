@@ -106,10 +106,13 @@ ol, ul {
   list-style: none;
 }
 
-a:focus, img {
+a:focus {
   outline: none; /* Removes dotted outline caused by FireFox */
-  border: none; /* Removes purple border caused by FireFox */
 } 
+
+img {
+  border: none; /* Removes purple border caused by FireFox */
+}
 
 
 /*

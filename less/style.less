@@ -202,6 +202,11 @@ Useful LESS Mixins
   tbody tr:nth-child(2n+1) { background: @stripe_color; }
 }
 
+/* List Zebra Stripe */
+.zebra-stripe(@stripe_color: #F0F0F0) {
+  li:nth-child(2n+1) { background: @stripe_color; }
+}
+
 /* Opacity */
 .opacity (@opacity: 0.5) {
   -webkit-opacity: @opacity;
@@ -267,11 +272,13 @@ HTML {
   /* Prevents webpage zooming for mobile devices change orientation */
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
+  font-size: 16px;
 }
 
 BODY {
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   background: @base-color;
+  font-size: 62.5%; /* 1em = 10px */
 }
 
 
@@ -372,6 +379,20 @@ blockquote {
 
 .clear {
   clear: both;
+}
+
+.clear-fix:before,
+.clear-fix:after {
+  content: " ";
+  display: table;
+}
+
+.clear-fix:after {
+  clear: both;
+}
+
+.clear-fix {
+  *zoom: 1;
 }
 
 

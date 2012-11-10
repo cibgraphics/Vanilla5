@@ -152,10 +152,13 @@ HTML {
   /* Prevents webpage zooming for mobile devices change orientation */
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
+  font-size: 16px;
 }
 
 BODY {
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  background: ;
+  font-size: 62.5%; /* 1em = 10px */
 }
 
 
@@ -260,6 +263,21 @@ blockquote {
 .clear {
   clear: both;
 }
+
+.clear-fix:before,
+.clear-fix:after {
+  content: " ";
+  display: table;
+}
+
+.clear-fix:after {
+  clear: both;
+}
+
+.clear-fix {
+  *zoom: 1;
+}
+
 
 
 /*

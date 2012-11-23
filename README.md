@@ -22,6 +22,11 @@ If you create a webpage using this template, let me know by sending me a message
 
 ###ChangeLog:
 
+####Version 1.4:
+
+* Added new mixins
+* Separated Normalize CSS and Mixins into their own files
+
 ####Version 1.3:
 
 * Updated jQueryUI to 1.9.1

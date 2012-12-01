@@ -1,4 +1,4 @@
-# Vanilla5 Template v1.3
+# Vanilla5 Template v1.5
 
 _Copyright Christopher Bishop 2011-2012._
 
@@ -17,10 +17,25 @@ You may use this template free of charge with no link backs whatsoever. You may 
 * Folders setup for admin, images, and creative.
 * PSD included for the 960grid.
 * Javascript and CSS to fix HTML5 support for IE
+* Uses LESS
 
 If you create a webpage using this template, let me know by sending me a message from www.cibgraphics.com/contact
 
 ###ChangeLog:
+
+####Version 1.5:
+
+* Table of Contents
+* Better CSS organization
+* Changed base HTML
+* Clearing can be done with CSS class, or LESS mixin
+* Print styles have default sans serif font
+* Comments that are LESS related will not show in compiled CSS
+* Layout and Pages CSS/LESS Sections
+* block-content class style (for groups of content)
+* Moved font smoothing fix to LESS mixin (was causing issues with rendering)
+* Additional HTML comments for closing sections
+* Updated jQuery and jQueryUI to latest versions
 
 ####Version 1.4:
 

@@ -1,4 +1,30 @@
 /*
+-----------------------------------------
+TABLE OF CONTENTS
+
+(The number set before the description is to help find the section using your programs 'find' function)
+
+V01 - Rest
+V02 - Background Highlights
+V03 - Head Tags (HTML & BODY)
+V04 - Containers
+V05 - Headers
+V06 - Basics
+V07 - Secondary Basics
+V08 - Branding
+V09 - Navigation
+V10 - Main Layout
+V11 - Pages
+V12 - Footer
+V13 - Tables
+V14 - Forms
+V15 - Generics (for testing)
+V16 - Mobile Adjustments
+V17 - Media Queries
+-----------------------------------------
+*/
+
+/*
 html5doctor.com Reset Stylesheet
 v1.6.1
 Last Updated: 2010-09-17
@@ -124,7 +150,7 @@ Start the Styling of your Site Here
 
 /*
 -----------------------------------------
-CSS3 Background Highlights
+V02 - Background Highlights
 Try to make the background match the main color of your site and make the color easy to read by contrasting the background. 
 Make both sections the same.
 -----------------------------------------
@@ -143,7 +169,7 @@ Make both sections the same.
 
 /*
 -----------------------------------------
-HEAD TAGS
+V03 - HEAD TAGS
 -----------------------------------------
 */
 
@@ -165,7 +191,7 @@ BODY {
 
 /*
 -----------------------------------------
-CONTAINER
+V04 - CONTAINER
 -----------------------------------------
 */
 
@@ -184,7 +210,7 @@ CONTAINER
 
 /*
 -----------------------------------------
-HEADERS
+V05 - HEADERS
 -----------------------------------------
 */
 
@@ -216,7 +242,7 @@ h6 {
 
 /*
 -----------------------------------------
-BASICS
+V06 - BASICS
 -----------------------------------------
 */
 
@@ -239,7 +265,7 @@ p {
 
 /*
 -----------------------------------------
-SECONDARY BASICS
+V07 - SECONDARY BASICS
 -----------------------------------------
 */
 
@@ -285,7 +311,7 @@ blockquote {
 
 /*
 -----------------------------------------
-BRANDING
+V08 - BRANDING
 -----------------------------------------
 */
 
@@ -309,7 +335,7 @@ header#masthead div#logo a{
 
 /*
 -----------------------------------------
-NAVIGATION
+V09 - NAVIGATION
 Please use the nav element in HTML5
 -----------------------------------------
 */
@@ -338,37 +364,29 @@ header#masthead ul li a:hover {
 
 /*
 -----------------------------------------
-ARTICLE (left side)
+V10 - MAIN LAYOUT
 -----------------------------------------
 */
 
-
-article {
-  width: ;
-  float: left;
-  display: inline;
+.block-content {
+  margin-bottom: 20px;
 }
+
 
 
 
 /*
 -----------------------------------------
-ASIDE (right side)
+V11 - PAGES
 -----------------------------------------
 */
 
-
-aside {
-  width: ;
-  float: right;
-  display: inline;
-}
 
 
 
 /*
 -----------------------------------------
-FOOTER
+V12 - FOOTER
 -----------------------------------------
 */
 
@@ -383,7 +401,7 @@ footer#siteFooter {
 
 /*
 -----------------------------------------
-TABLES
+V13 - TABLES
 -----------------------------------------
 */
 
@@ -439,7 +457,7 @@ td {
 
 /*
 -----------------------------------------
-FORMS
+V14 - FORMS
 The idea is to put the form inputs in a ul>li so your submit button doesn't inherit text input styles.
 -----------------------------------------
 */
@@ -477,7 +495,7 @@ form input.submit {
 
 /*
 -----------------------------------------
-GENERICS (used for testing)
+V15 - GENERICS (used for testing)
 -----------------------------------------
 */
 
@@ -518,7 +536,7 @@ GENERICS (used for testing)
 
 /*
 -----------------------------------------
-MOBILE ADJUSTMENTS
+V16 - MOBILE ADJUSTMENTS
 -----------------------------------------
 */
 
@@ -530,7 +548,7 @@ a:link {
 
 /*
 -----------------------------------------
-Responsive Web Design Queries
+V17 - Responsive Web Design Queries
 -----------------------------------------
 */
 

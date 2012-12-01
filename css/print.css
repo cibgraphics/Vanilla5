@@ -1,5 +1,9 @@
 /* Print Styles */
 
+* {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
 body {
    background: white;
    font-size: 12pt;

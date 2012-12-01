@@ -1,3 +1,32 @@
+/*
+-----------------------------------------
+TABLE OF CONTENTS
+
+(The number set before the description is to help find the section using your programs 'find' function)
+
+V01 - Includes - Incusion of CSS/LESS files
+V02 - LESS Variables - This will not showup in your compiled CSS
+V03 - Background Highlights
+V04 - Head Tags (HTML & BODY)
+V05 - Containers
+V06 - Headers
+V07 - Basics
+V08 - Secondary Basics
+V09 - Branding
+V10 - Navigation
+V11 - Main Layout
+V12 - Pages
+V13 - Footer
+V14 - Tables
+V15 - Forms
+V16 - Generics (for testing)
+V17 - Mobile Adjustments
+V18 - Media Queries
+-----------------------------------------
+*/
+
+// V01 - Includes
+
 @import "includes/normalize.less";
 @import "includes/mixins.less";
 
@@ -9,7 +38,7 @@ Start the Styling of your Site Here
 */
 
 
-// LESS Variables
+// V02 - LESS Variables
 
 @base-color: #;
 @content-background: #;
@@ -22,7 +51,7 @@ Start the Styling of your Site Here
 
 /*
 -----------------------------------------
-CSS3 Background Highlights
+V03 - Background Highlights
 Try to make the background match the main color of your site and make the color easy to read by contrasting the background. 
 Make both sections the same.
 -----------------------------------------
@@ -41,7 +70,7 @@ Make both sections the same.
 
 /*
 -----------------------------------------
-HEAD TAGS
+V04 - HEAD TAGS
 -----------------------------------------
 */
 
@@ -63,7 +92,7 @@ BODY {
 
 /*
 -----------------------------------------
-CONTAINER
+V05 - CONTAINERS
 -----------------------------------------
 */
 
@@ -83,7 +112,7 @@ CONTAINER
 
 /*
 -----------------------------------------
-HEADERS
+V06 - HEADERS
 -----------------------------------------
 */
 
@@ -115,7 +144,7 @@ h6 {
 
 /*
 -----------------------------------------
-BASICS
+V07 - BASICS
 -----------------------------------------
 */
 
@@ -137,13 +166,9 @@ p {
 
 /*
 -----------------------------------------
-SECONDARY BASICS
+V08 - SECONDARY BASICS
 -----------------------------------------
 */
-
-* {
-  -webkit-transform-style: preserve-3d; /* prevents font smoothing when something on page gets transformed */
-}
 
 blockquote {
   
@@ -179,7 +204,7 @@ blockquote {
 
 /*
 -----------------------------------------
-BRANDING
+V09 - BRANDING
 -----------------------------------------
 */
 
@@ -205,7 +230,7 @@ header#masthead {
 
 /*
 -----------------------------------------
-NAVIGATION
+V10 - NAVIGATION
 Please use the nav element in HTML5
 -----------------------------------------
 */
@@ -230,37 +255,32 @@ header#masthead ul {
 
 /*
 -----------------------------------------
-ARTICLE (left side)
+V11 - MAIN LAYOUT
 -----------------------------------------
 */
 
-
-article {
-  width: ;
-  float: left;
-  display: inline;
+.block-content {
+  .clearfix();
+  margin-bottom: 20px;
 }
+
 
 
 
 /*
 -----------------------------------------
-ASIDE (right side)
+V12 - PAGES
 -----------------------------------------
 */
 
 
-aside {
-  width: ;
-  float: right;
-  display: inline;
-}
+
 
 
 
 /*
 -----------------------------------------
-FOOTER
+V13 - FOOTER
 -----------------------------------------
 */
 
@@ -275,7 +295,7 @@ footer#siteFooter {
 
 /*
 -----------------------------------------
-TABLES
+V14 - TABLES
 -----------------------------------------
 */
 
@@ -331,7 +351,7 @@ td {
 
 /*
 -----------------------------------------
-FORMS
+V15 - FORMS
 The idea is to put the form inputs in a ul>li so your submit button doesn't inherit text input styles.
 -----------------------------------------
 */
@@ -350,7 +370,7 @@ form {
 
 /*
 -----------------------------------------
-GENERICS (used for testing)
+V16 - GENERICS (used for testing)
 -----------------------------------------
 */
 
@@ -391,7 +411,7 @@ GENERICS (used for testing)
 
 /*
 -----------------------------------------
-MOBILE ADJUSTMENTS
+V17 - MOBILE ADJUSTMENTS
 -----------------------------------------
 */
 
@@ -403,7 +423,7 @@ a:link {
 
 /*
 -----------------------------------------
-Responsive Web Design Queries
+V18 - Responsive Web Design Queries
 -----------------------------------------
 */
 

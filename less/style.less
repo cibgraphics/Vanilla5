@@ -49,6 +49,8 @@ Start the Styling of your Site Here
 @link-hover-light: lighten(@link-color, 10%);
 @link-hover-dark: darken(@link-color, 10%);
 
+@placeholder-color: #ddd;
+
 /*
 -----------------------------------------
 V03 - Background Highlights
@@ -187,19 +189,7 @@ blockquote {
   clear: both;
 }
 
-.clear-fix:before,
-.clear-fix:after {
-  content: " ";
-  display: table;
-}
-
-.clear-fix:after {
-  clear: both;
-}
-
-.clear-fix {
-  *zoom: 1;
-}
+// For a better clearfix use .clearfix(); which is contained in the mixins.less
 
 
 /*
@@ -352,19 +342,73 @@ td {
 /*
 -----------------------------------------
 V15 - FORMS
-The idea is to put the form inputs in a ul>li so your submit button doesn't inherit text input styles.
+The idea is to put the form inputs in a ul>li so your submit button doesn't inherit text input styles and for easier styling.
 -----------------------------------------
 */
 
+::-webkit-input-placeholder { color: @placeholder-color; }
+::-moz-placeholder { color: @placeholder-color; }
+:-ms-input-placeholder { color: @placeholder-color; }
+input:-moz-placeholder { color: @placeholder-color; }
 
 form {
   margin: 10px 0;
-  ul li label{ }
-  ul li input { }
-  ul li textarea { }
-  ul li select { }
-  ul li option { }
-  input.submit { }
+  
+  ul {
+    
+    li {
+      
+      label {
+        
+      }
+      
+      input{
+        
+        &[type="text"] {
+          
+        }
+        
+        &[type="checkbox"] {
+          
+        }
+        
+        &[type="radio"] {
+          
+        }
+        
+        &[type="password"] {
+          
+        }
+        
+        &[type="tel"] {
+          
+        }
+        
+        &[type="email"] {
+          
+        }
+        
+        &[type="date"] {
+          
+        }
+      }
+      
+      textarea {
+        
+      }
+      
+      select {
+        
+        option {
+          
+        }
+      }
+    }
+  }
+  
+  input.submit {
+  
+  }
 }
 
 
@@ -437,8 +481,18 @@ V18 - Responsive Web Design Queries
 
 @media only screen and (max-width: 768px) {
   
+  .layout-stack-tablet {
+    float: none !important;
+    width: auto !important;
+  }
+  
 }
 
 @media only screen and (max-width: 480px) {
+  
+  .layout-stack-mobile {
+    float: none !important;
+    width: auto !important;
+  }
   
 }

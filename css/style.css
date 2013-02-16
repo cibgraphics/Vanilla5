@@ -462,28 +462,61 @@ The idea is to put the form inputs in a ul>li so your submit button doesn't inhe
 -----------------------------------------
 */
 
+::-webkit-input-placeholder { color: #ddd; }
+::-moz-placeholder { color: #ddd; }
+:-ms-input-placeholder { color: #ddd; }
+input:-moz-placeholder { color: #ddd; }
+
 
 form {
   
 }
 
-form ul li label{
+form ul {
   
 }
 
-form ul li input {
+form li label{
   
 }
 
-form ul li textarea {
+form li input {
   
 }
 
-form ul li select {
+form li input[type="text"] {
   
 }
 
-form ul li option {
+form li input[type="checkbox"] {
+  
+}
+
+form li input[type="radio"] {
+  
+}
+
+form li input[type="password"] {
+  
+}
+
+form li input[type="tel"] {
+  
+}
+
+form li input[type="email"] {
+  
+}
+
+form li textarea {
+  
+}
+
+form li select {
+  
+}
+
+form li option {
   
 }
 
@@ -562,8 +595,18 @@ V17 - Responsive Web Design Queries
 
 @media only screen and (max-width: 768px) {
   
+  .layout-stack-tablet {
+    float: none !important;
+    width: auto !important;
+  }
+  
 }
 
 @media only screen and (max-width: 480px) {
+  
+  .layout-stack-mobile {
+    float: none !important;
+    width: auto !important;
+  }
   
 }

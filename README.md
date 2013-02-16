@@ -1,6 +1,6 @@
-# Vanilla5 Template v1.5
+# Vanilla5 Template v1.5.5
 
-_Copyright Christopher Bishop 2011-2012._
+_Copyright Christopher Bishop 2011-2013._
 
 Vanilla5 is a base starter kit with everything you need for the majority of your project. HTML5 ready. Mobile Ready. Get started on your projects faster with Vanilla5.
 
@@ -14,7 +14,7 @@ You may use this template free of charge with no link backs whatsoever. You may 
 * Basic HTML5 template with a header, two columns, and a footer
 * Basic CSS file set up. Just enter your widths, and colors. It doesn't do everything for you, it's just a starter file.
 * Links to jQuery and jQueryUI so you can get started right away.
-* Folders setup for admin, images, and creative.
+* Folders setup for images, includes, and creative.
 * PSD included for the 960grid.
 * Javascript and CSS to fix HTML5 support for IE
 * Uses LESS
@@ -22,6 +22,15 @@ You may use this template free of charge with no link backs whatsoever. You may 
 If you create a webpage using this template, let me know by sending me a message from www.cibgraphics.com/contact
 
 ###ChangeLog:
+
+####Version 1.5.5:
+
+* Windows 8 Tile tags (meta) with Vanilla5 assets
+* Deleted duplicate clearfix
+* Deleted admin and flash folder. These are not usual to a standard workflow
+* Reformatted form section and included popular input types
+* Input placeholder styles
+* Classes for responsive stacking (add a class and it will stack any column for tablet or mobile)
 
 ####Version 1.5:
 

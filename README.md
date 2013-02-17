@@ -1,4 +1,4 @@
-# Vanilla5 Template v1.5.5
+# Vanilla5 Template v1.5.6
 
 _Copyright Christopher Bishop 2011-2013._
 
@@ -22,6 +22,11 @@ You may use this template free of charge with no link backs whatsoever. You may 
 If you create a webpage using this template, let me know by sending me a message from www.cibgraphics.com/contact
 
 ###ChangeLog:
+
+####Version 1.5.6:
+
+* Updates jQuery and jQueryUI to latest version
+* Gets rid of not used javascript
 
 ####Version 1.5.5:
 

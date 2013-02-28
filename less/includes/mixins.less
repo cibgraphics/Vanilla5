@@ -4,53 +4,53 @@
 // Border Radius - All Equal
 .border-radius (@radius: 5px) {
   -webkit-border-radius: @radius;
-  -moz-border-radius: @radius;
-  -ms-border-radius: @radius;
-  -o-border-radius: @radius;
-  border-radius: @radius;
+     -moz-border-radius: @radius;
+      -ms-border-radius: @radius;
+       -o-border-radius: @radius;
+          border-radius: @radius;
 }
 
 // Border Radius - Custom Sides
 .border-radius-custom (@topleft: 5px, @topright: 5px, @bottomleft: 5px, @bottomright: 5px) {
   -webkit-border-radius: @topleft @topright @bottomright @bottomleft;
-  -moz-border-radius: @topleft @topright @bottomright @bottomleft;
-  -ms-border-radius: @topleft @topright @bottomright @bottomleft;
-  -o-border-radius: @topleft @topright @bottomright @bottomleft;
-  border-radius: @topleft @topright @bottomright @bottomleft;
+     -moz-border-radius: @topleft @topright @bottomright @bottomleft;
+      -ms-border-radius: @topleft @topright @bottomright @bottomleft;
+       -o-border-radius: @topleft @topright @bottomright @bottomleft;
+          border-radius: @topleft @topright @bottomright @bottomleft;
 }
 
 // Box Shadow
 .box-shadow (@x: 0px, @y: 3px, @blur: 5px, @alpha: 0.5) {
   -webkit-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
-  -moz-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
-  -ms-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
-  -o-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
-  box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+     -moz-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+      -ms-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+       -o-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+          box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
 }
 
 // Inner Shadow
 .inner-shadow (@x: 0, @y: 1px, @blur: 2px, @spread: 0, @alpha: 0.25) {
   -webkit-box-shadow: inset @x @y @blur @spread rgba(0, 0, 0, @alpha);
-  -moz-box-shadow: inset @x @y @blur @spread rgba(0, 0, 0, @alpha);
-  -ms-box-shadow: inset @x @y @blur @spread rgba(0, 0, 0, @alpha);
-  -o-box-shadow: inset @x @y @blur @spread rgba(0, 0, 0, @alpha);
-  box-shadow: inset @x @y @blur @spread rgba(0, 0, 0, @alpha);
+     -moz-box-shadow: inset @x @y @blur @spread rgba(0, 0, 0, @alpha);
+      -ms-box-shadow: inset @x @y @blur @spread rgba(0, 0, 0, @alpha);
+       -o-box-shadow: inset @x @y @blur @spread rgba(0, 0, 0, @alpha);
+          box-shadow: inset @x @y @blur @spread rgba(0, 0, 0, @alpha);
 }
 
 // Animation
 .animation (@name, @duration: 300ms, @delay: 0, @ease: ease) {
   -webkit-animation: @name @duration @delay @ease;
-  -moz-animation: @name @duration @delay @ease;
-  -ms-animation: @name @duration @delay @ease;
+     -moz-animation: @name @duration @delay @ease;
+      -ms-animation: @name @duration @delay @ease;
 }
 
 // Transition
-.transition (@prop: all, @time: 1s, @ease: linear) {
+.transition (@prop: all, @time: 0.2s, @ease: linear) {
   -webkit-transition: @prop @time @ease;
-  -moz-transition: @prop @time @ease;
-  -o-transition: @prop @time @ease;
-  -ms-transition: @prop @time @ease;
-  transition: @prop @time @ease;
+     -moz-transition: @prop @time @ease;
+       -o-transition: @prop @time @ease;
+      -ms-transition: @prop @time @ease;
+          transition: @prop @time @ease;
 }
 
 // Linear Gradient
@@ -90,8 +90,8 @@
 // Opacity
 .opacity (@opacity: 0.5) {
   -webkit-opacity: @opacity;
-  -moz-opacity: @opacity;
-  opacity: @opacity;
+     -moz-opacity: @opacity;
+          opacity: @opacity;
 }
 
 // Opacity IE6-7 - Use with Opacity Mixin 

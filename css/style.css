@@ -257,9 +257,10 @@ a:hover {
 }
 
 p {
-	font-size: 12px;
+  font-size: 12px;
   line-height: 1.4em;
-	color: #;
+  color: ;
+  margin-bottom: 1.2em;
 }
 
 
@@ -317,7 +318,7 @@ V08 - BRANDING
 
 
 header#masthead {
-  width: 960px;
+  max-width: 960px;
   height: ;
   position: relative;
 }
@@ -392,7 +393,7 @@ V12 - FOOTER
 
 
 footer#siteFooter {
-  width: 960px;
+  max-width: 960px;
   height: ;
 }
 
@@ -462,12 +463,6 @@ The idea is to put the form inputs in a ul>li so your submit button doesn't inhe
 -----------------------------------------
 */
 
-::-webkit-input-placeholder { color: #ddd; }
-::-moz-placeholder { color: #ddd; }
-:-ms-input-placeholder { color: #ddd; }
-input:-moz-placeholder { color: #ddd; }
-
-
 form {
   
 }
@@ -523,6 +518,11 @@ form li option {
 form input.submit {
   
 }
+
+::-webkit-input-placeholder { color: #ddd; }
+::-moz-placeholder { color: #ddd; }
+:-ms-input-placeholder { color: #ddd; }
+input:-moz-placeholder { color: #ddd; }
 
 
 

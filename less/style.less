@@ -160,9 +160,10 @@ a {
 }
 
 p {
-	font-size: 12px;
+  font-size: 12px;
   line-height: 1.4em;
-	color: @text-color;
+  color: @text-color;
+  margin-bottom: 1.2em;
 }
 
 
@@ -200,7 +201,7 @@ V09 - BRANDING
 
 
 header#masthead {
-  width: 960px;
+  max-width: 960px;
   height: ;
   position: relative;
   
@@ -276,7 +277,7 @@ V13 - FOOTER
 
 
 footer#siteFooter {
-  width: 960px;
+  max-width: 960px;
   height: ;
 }
 
@@ -346,11 +347,6 @@ The idea is to put the form inputs in a ul>li so your submit button doesn't inhe
 -----------------------------------------
 */
 
-::-webkit-input-placeholder { color: @placeholder-color; }
-::-moz-placeholder { color: @placeholder-color; }
-:-ms-input-placeholder { color: @placeholder-color; }
-input:-moz-placeholder { color: @placeholder-color; }
-
 form {
   margin: 10px 0;
   
@@ -410,6 +406,11 @@ form {
   
   }
 }
+
+::-webkit-input-placeholder { color: @placeholder-color; }
+::-moz-placeholder { color: @placeholder-color; }
+:-ms-input-placeholder { color: @placeholder-color; }
+input:-moz-placeholder { color: @placeholder-color; }
 
 
 /*

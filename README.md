@@ -1,4 +1,4 @@
-# Vanilla5 Template v1.5.7
+# Vanilla5 Template v1.6
 
 _Copyright Christopher Bishop 2011-2013._
 
@@ -22,6 +22,14 @@ You may use this template free of charge with no link backs whatsoever. You may 
 If you create a webpage using this template, let me know by sending me a message from www.cibgraphics.com/contact
 
 ###ChangeLog:
+
+####Version 1.6:
+
+* Fixed incorrect order of border radius mixin argument
+* Fixed naming conflict in mixins
+* Fixed incorrect calculation for IE6-7 opacity mixin
+* Restored clear-fix classes that was erroneously deleted
+* Added gradient mixin that supports a third stop
 
 ####Version 1.5.7:
 

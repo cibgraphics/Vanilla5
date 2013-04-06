@@ -11,7 +11,7 @@
 }
 
 // Border Radius - Custom Sides
-.border-radius-custom (@topleft: 5px, @topright: 5px, @bottomleft: 5px, @bottomright: 5px) {
+.border-radius-custom (@topleft: 5px, @topright: 5px, @bottomright: 5px, @bottomleft: 5px) {
   -webkit-border-radius: @topleft @topright @bottomright @bottomleft;
      -moz-border-radius: @topleft @topright @bottomright @bottomleft;
       -ms-border-radius: @topleft @topright @bottomright @bottomleft;
@@ -54,13 +54,22 @@
 }
 
 // Linear Gradient
-.gradient (@origin: left, @start: #ffffff, @stop: #000000) {
+.gradient (@origin: top, @start: #ffffff, @stop: #e2e2e2) {
   background-color: @start;
   background-image: -webkit-linear-gradient(@origin, @start, @stop);
   background-image: -moz-linear-gradient(@origin, @start, @stop);
   background-image: -o-linear-gradient(@origin, @start, @stop);
   background-image: -ms-linear-gradient(@origin, @start, @stop);
   background-image: linear-gradient(@origin, @start, @stop);
+}
+
+.gradient-trio (@origin: top, @start: #ffffff, @stop-color: #f2f2f2, @stop-position: 50%, @end: #e2e2e2) {
+  background: @start;
+  background: -moz-linear-gradient(@origin, @start 0%, @stop-color @stop-position, @end 100%);
+  background: -webkit-linear-gradient(@origin, @start 0%,@stop-color @stop-position,@end 100%);
+  background: -o-linear-gradient(@origin, @start 0%,@stop-color @stop-position,@end 100%);
+  background: -ms-linear-gradient(@origin, @start 0%,@stop-color @stop-position,@end 100%);
+  background: linear-gradient(@origin, @start 0%,@stop-color @stop-position,@end 100%);
 }
 
 // Quick Gradient - needs background color
@@ -83,7 +92,7 @@
 }
 
 // List Zebra Stripe
-.zebra-stripe(@stripe_color: #F0F0F0) {
+.zebra-list-stripe(@stripe_color: #F0F0F0) {
   li:nth-child(2n+1) { background: @stripe_color; }
 }
 
@@ -96,8 +105,9 @@
 
 // Opacity IE6-7 - Use with Opacity Mixin 
 .transparent (@opacityIE: 0.5) {
+  @ie-transparency: (@opacityIE * 100);
   zoom: 1;
-  filter: alpha(opacity=@opacityIE);
+  filter: alpha(opacity=@ie-transparency);
   opacity: @opacityIE;
 }
 

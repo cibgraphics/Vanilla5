@@ -30,6 +30,7 @@ If you create a webpage using this template, let me know by sending me a message
 * Fixed incorrect calculation for IE6-7 opacity mixin
 * Restored clear-fix classes that was erroneously deleted
 * Added gradient mixin that supports a third stop
+* Updated jQueryUI to latest version
 
 ####Version 1.5.7:
 

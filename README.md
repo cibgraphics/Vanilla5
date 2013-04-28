@@ -1,4 +1,4 @@
-# Vanilla5 Template v1.6
+# Vanilla5 Template v1.6.1
 
 _Copyright Christopher Bishop 2011-2013._
 
@@ -22,6 +22,11 @@ You may use this template free of charge with no link backs whatsoever. You may 
 If you create a webpage using this template, let me know by sending me a message from www.cibgraphics.com/contact
 
 ###ChangeLog:
+
+####Version 1.6.1:
+
+* Added white quick gradient mixin
+* Fixed inner shadow mixin
 
 ####Version 1.6:
 

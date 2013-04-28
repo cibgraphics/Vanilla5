@@ -29,12 +29,12 @@
 }
 
 // Inner Shadow
-.inner-shadow (@x: 0, @y: 1px, @blur: 2px, @spread: 0, @alpha: 0.25) {
-  -webkit-box-shadow: inset @x @y @blur @spread rgba(0, 0, 0, @alpha);
-     -moz-box-shadow: inset @x @y @blur @spread rgba(0, 0, 0, @alpha);
-      -ms-box-shadow: inset @x @y @blur @spread rgba(0, 0, 0, @alpha);
-       -o-box-shadow: inset @x @y @blur @spread rgba(0, 0, 0, @alpha);
-          box-shadow: inset @x @y @blur @spread rgba(0, 0, 0, @alpha);
+.inner-shadow (@x: 0, @y: 1px, @blur: 2px, @alpha: 0.25) {
+  -webkit-box-shadow: inset @x @y @blur rgba(0, 0, 0, @alpha);
+     -moz-box-shadow: inset @x @y @blur rgba(0, 0, 0, @alpha);
+      -ms-box-shadow: inset @x @y @blur rgba(0, 0, 0, @alpha);
+       -o-box-shadow: inset @x @y @blur rgba(0, 0, 0, @alpha);
+          box-shadow: inset @x @y @blur rgba(0, 0, 0, @alpha);
 }
 
 // Animation
@@ -79,6 +79,15 @@
   background-image: -o-linear-gradient(@origin, rgba(0,0,0,0.0), rgba(0,0,0,@alpha));
   background-image: -ms-linear-gradient(@origin, rgba(0,0,0,0.0), rgba(0,0,0,@alpha));
   background-image: linear-gradient(@origin, rgba(0,0,0,0.0), rgba(0,0,0,@alpha));
+}
+
+// Quick White Gradient - needs background color
+.quick-gradient-white (@origin: top, @alpha: 0.25) {
+  background-image: -webkit-linear-gradient(@origin, rgba(255,255,255,@alpha), rgba(255,255,255,.0));
+  background-image: -moz-linear-gradient(@origin, rgba(255,255,255,@alpha), rgba(255,255,255,.0));
+  background-image: -o-linear-gradient(@origin,rgba(255,255,255,@alpha), rgba(255,255,255,.0));
+  background-image: -ms-linear-gradient(@origin, rgba(255,255,255,@alpha), rgba(255,255,255,.0));
+  background-image: linear-gradient(@origin, rgba(255,255,255,@alpha), rgba(255,255,255,.0));
 }
 
 // Webkit Reflection

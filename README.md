@@ -34,6 +34,7 @@ If you create a webpage using this template, let me know by sending me a message
 * iOS icon is now precomposed
 * iOS icon is now 144px v 144px
 * Additional helpful mixins
+* Variables for type and font size
 
 ####Version 1.6.1:
 

@@ -9,17 +9,17 @@ V02 - LESS Variables - This will not showup in your compiled CSS
 V03 - Background Highlights
 V04 - Head Tags (HTML & BODY)
 V05 - Containers
-V06 - Headers
-V07 - Basics
-V08 - Secondary Basics
-V09 - Branding
-V10 - Navigation
-V11 - Main Layout
+V06 - Main Layout
+V07 - Headers
+V08 - Basics
+V09 - Secondary Basics
+V10 - Branding
+V11 - Navigation
 V12 - Pages
 V13 - Footer
 V14 - Tables
 V15 - Forms
-V16 - Generics (for testing)
+V16 - Generics
 V17 - Mobile Adjustments
 V18 - Media Queries
 -----------------------------------------
@@ -40,6 +40,8 @@ Start the Styling of your Site Here
 
 // V02 - LESS Variables
 
+@site-width: 960px;
+
 @base-color: #;
 @content-background: #;
 
@@ -50,6 +52,17 @@ Start the Styling of your Site Here
 @link-hover-dark: darken(@link-color, 10%);
 
 @placeholder-color: #ddd;
+
+// Fonts
+@font-sans: Helvetica Neue, Helvetica, Arial, sans-serif;
+@font-serif: Georgia, Times, "Times New Roman", serif;
+@font-script: 'Great Vibes', cursive;
+@font-mono: "Andale Mono", AndaleMono, monospace;
+
+// Font Size
+@font-size: 12px;
+@font-size-small: (@font-size - 2);
+@font-size-large: (@font-size + 2 );
 
 /*
 -----------------------------------------
@@ -76,6 +89,9 @@ V04 - HEAD TAGS
 -----------------------------------------
 */
 
+* {
+  .box-sizing();
+}
 
 HTML {
   /* Prevents webpage zooming for mobile devices change orientation */
@@ -85,7 +101,7 @@ HTML {
 }
 
 BODY {
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: @font-sans;
   background: @base-color;
   font-size: 62.5%; /* 1em = 10px */
 }
@@ -99,13 +115,12 @@ V05 - CONTAINERS
 */
 
 
-#container {
-  width: 960px;
+.container {
+  width: @site-width;
   margin: 0 auto;
 }
 
-#content {
-  width: 960px;
+.content {
   background: @content-background;
 }
 
@@ -114,7 +129,22 @@ V05 - CONTAINERS
 
 /*
 -----------------------------------------
-V06 - HEADERS
+V11 - MAIN LAYOUT
+-----------------------------------------
+*/
+
+.block-content {
+  .clearfix();
+  margin-bottom: 20px;
+}
+
+
+
+
+
+/*
+-----------------------------------------
+V07 - HEADERS
 -----------------------------------------
 */
 
@@ -146,7 +176,7 @@ h6 {
 
 /*
 -----------------------------------------
-V07 - BASICS
+V08 - BASICS
 -----------------------------------------
 */
 
@@ -169,7 +199,7 @@ p {
 
 /*
 -----------------------------------------
-V08 - SECONDARY BASICS
+V09 - SECONDARY BASICS
 -----------------------------------------
 */
 
@@ -183,6 +213,7 @@ blockquote {
 
 .button {
   background: ;
+  
   &:hover { }
 }
 
@@ -195,12 +226,12 @@ blockquote {
 
 /*
 -----------------------------------------
-V09 - BRANDING
+V10 - BRANDING
 -----------------------------------------
 */
 
 
-header#masthead {
+.site-masthead {
   max-width: 960px;
   height: ;
   position: relative;
@@ -221,13 +252,13 @@ header#masthead {
 
 /*
 -----------------------------------------
-V10 - NAVIGATION
+V11 - NAVIGATION
 Please use the nav element in HTML5
 -----------------------------------------
 */
 
 
-header#masthead ul {
+.site-masthead ul {
   list-style: none;
   position: absolute;
   top: ;
@@ -241,18 +272,6 @@ header#masthead ul {
     color: @link-color;
     &:hover { color: @link-hover-light; }
   }
-}
-
-
-/*
------------------------------------------
-V11 - MAIN LAYOUT
------------------------------------------
-*/
-
-.block-content {
-  .clearfix();
-  margin-bottom: 20px;
 }
 
 
@@ -276,7 +295,7 @@ V13 - FOOTER
 */
 
 
-footer#siteFooter {
+.site-footer {
   max-width: 960px;
   height: ;
 }
@@ -349,62 +368,29 @@ The idea is to put the form inputs in a ul>li so your submit button doesn't inhe
 
 form {
   margin: 10px 0;
+}
+
+label {
   
-  ul {
+}
+
+input{
+  
+}
+
+textarea {
+  
+}
+
+select {
+  
+  option {
     
-    li {
-      
-      label {
-        
-      }
-      
-      input{
-        
-        &[type="text"] {
-          
-        }
-        
-        &[type="checkbox"] {
-          
-        }
-        
-        &[type="radio"] {
-          
-        }
-        
-        &[type="password"] {
-          
-        }
-        
-        &[type="tel"] {
-          
-        }
-        
-        &[type="email"] {
-          
-        }
-        
-        &[type="date"] {
-          
-        }
-      }
-      
-      textarea {
-        
-      }
-      
-      select {
-        
-        option {
-          
-        }
-      }
-    }
   }
-  
-  input.submit {
-  
-  }
+}
+
+input.submit {
+
 }
 
 ::-webkit-input-placeholder { color: @placeholder-color; }
@@ -415,7 +401,7 @@ input:-moz-placeholder { color: @placeholder-color; }
 
 /*
 -----------------------------------------
-V16 - GENERICS (used for testing)
+V16 - GENERICS
 -----------------------------------------
 */
 
@@ -446,10 +432,6 @@ V16 - GENERICS (used for testing)
 
 .bold {
   font-weight: bold;
-}
-
-.red {
-  background: red;
 }
 
 

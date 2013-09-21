@@ -1,4 +1,4 @@
-# Vanilla5 Template v1.6.1
+# Vanilla5 Template v1.7
 
 _Copyright Christopher Bishop 2011-2013._
 
@@ -11,7 +11,7 @@ You may use this template free of charge with no link backs whatsoever. You may 
 
 ###Features:
 
-* Basic HTML5 template with a header, two columns, and a footer
+* Basic HTML5 template with a header, page contents, and a footer
 * Basic CSS file set up. Just enter your widths, and colors. It doesn't do everything for you, it's just a starter file.
 * Links to jQuery and jQueryUI so you can get started right away.
 * Folders setup for images, includes, and creative.
@@ -22,6 +22,18 @@ You may use this template free of charge with no link backs whatsoever. You may 
 If you create a webpage using this template, let me know by sending me a message from www.cibgraphics.com/contact
 
 ###ChangeLog:
+
+####Version 1.7:
+
+* Moved LESS file into CSS folder for better organization
+* box-sizing mixing and applied to everything
+* Improvements to class names
+* Improvements to selectors
+* Change layout position in style sheet
+* Improved Windows 8 tile support
+* iOS icon is now precomposed
+* iOS icon is now 144px v 144px
+* Additional helpful mixins
 
 ####Version 1.6.1:
 

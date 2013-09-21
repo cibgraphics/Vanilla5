@@ -8,17 +8,17 @@ V01 - Rest
 V02 - Background Highlights
 V03 - Head Tags (HTML & BODY)
 V04 - Containers
-V05 - Headers
-V06 - Basics
-V07 - Secondary Basics
-V08 - Branding
-V09 - Navigation
-V10 - Main Layout
+V05 - Main Layout
+V06 - Headers
+V07 - Basics
+V08 - Secondary Basics
+V09 - Branding
+V10 - Navigation
 V11 - Pages
 V12 - Footer
 V13 - Tables
 V14 - Forms
-V15 - Generics (for testing)
+V15 - Generics
 V16 - Mobile Adjustments
 V17 - Media Queries
 -----------------------------------------
@@ -173,6 +173,11 @@ V03 - HEAD TAGS
 -----------------------------------------
 */
 
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
 HTML {
   /* Prevents webpage zooming for mobile devices change orientation */
@@ -191,26 +196,40 @@ BODY {
 
 /*
 -----------------------------------------
-V04 - CONTAINER
+V04 - CONTAINERs
 -----------------------------------------
 */
 
 
-#container {
+.container {
   width: 960px;
   margin: 0 auto;
 }
 
-#content {
-  width: 960px;
+.content {
 }
+
 
 
 
 
 /*
 -----------------------------------------
-V05 - HEADERS
+V10 - MAIN LAYOUT
+-----------------------------------------
+*/
+
+.block-content {
+  margin-bottom: 20px;
+}
+
+
+
+
+
+/*
+-----------------------------------------
+V06 - HEADERS
 -----------------------------------------
 */
 
@@ -242,7 +261,7 @@ h6 {
 
 /*
 -----------------------------------------
-V06 - BASICS
+V07 - BASICS
 -----------------------------------------
 */
 
@@ -266,13 +285,9 @@ p {
 
 /*
 -----------------------------------------
-V07 - SECONDARY BASICS
+V08 - SECONDARY BASICS
 -----------------------------------------
 */
-
-* {
-  -webkit-transform-style: preserve-3d; /* prevents font smoothing when something on page gets transformed */
-}
 
 blockquote {
   
@@ -312,18 +327,18 @@ blockquote {
 
 /*
 -----------------------------------------
-V08 - BRANDING
+V09 - BRANDING
 -----------------------------------------
 */
 
 
-header#masthead {
+.site-masthead {
   max-width: 960px;
   height: ;
   position: relative;
 }
 
-header#masthead div#logo a{
+.site-masthead #logo a{
   display: block;
   height: ;
   width: ;
@@ -336,44 +351,30 @@ header#masthead div#logo a{
 
 /*
 -----------------------------------------
-V09 - NAVIGATION
+V10 - NAVIGATION
 Please use the nav element in HTML5
 -----------------------------------------
 */
 
 
-header#masthead ul {
+.site-masthead ul {
   list-style: none;
   position: absolute;
   top: ;
   left: ;
 }
 
-header#masthead ul li {
+.site-masthead li {
   
 }
 
-header#masthead ul li a {
+.site-masthead li a {
   
 }
 
-header#masthead ul li a:hover {
+.site-masthead li a:hover {
   
 }
-
-
-
-/*
------------------------------------------
-V10 - MAIN LAYOUT
------------------------------------------
-*/
-
-.block-content {
-  margin-bottom: 20px;
-}
-
-
 
 
 /*
@@ -392,7 +393,7 @@ V12 - FOOTER
 */
 
 
-footer#siteFooter {
+.site-footer {
   max-width: 960px;
   height: ;
 }
@@ -464,58 +465,30 @@ The idea is to put the form inputs in a ul>li so your submit button doesn't inhe
 */
 
 form {
+  margin: 10px 0;
+}
+
+label{
   
 }
 
-form ul {
+input {
   
 }
 
-form li label{
+textarea {
   
 }
 
-form li input {
+select {
   
 }
 
-form li input[type="text"] {
+option {
   
 }
 
-form li input[type="checkbox"] {
-  
-}
-
-form li input[type="radio"] {
-  
-}
-
-form li input[type="password"] {
-  
-}
-
-form li input[type="tel"] {
-  
-}
-
-form li input[type="email"] {
-  
-}
-
-form li textarea {
-  
-}
-
-form li select {
-  
-}
-
-form li option {
-  
-}
-
-form input.submit {
+input.submit {
   
 }
 
@@ -528,7 +501,7 @@ input:-moz-placeholder { color: #ddd; }
 
 /*
 -----------------------------------------
-V15 - GENERICS (used for testing)
+V15 - GENERICS
 -----------------------------------------
 */
 
@@ -559,10 +532,6 @@ V15 - GENERICS (used for testing)
 
 .bold {
   font-weight: bold;
-}
-
-.red {
-  background: red;
 }
 
 

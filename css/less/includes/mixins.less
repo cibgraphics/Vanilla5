@@ -28,6 +28,15 @@
           box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
 }
 
+// Box Shadow Color
+.box-shadow-color (@x: 0px, @y: 3px, @blur: 5px, @color) {
+  -webkit-box-shadow: @x @y @blur @color;
+     -moz-box-shadow: @x @y @blur @color;
+      -ms-box-shadow: @x @y @blur @color;
+       -o-box-shadow: @x @y @blur @color;
+          box-shadow: @x @y @blur @color;
+}
+
 // Inner Shadow
 .inner-shadow (@x: 0, @y: 1px, @blur: 2px, @alpha: 0.25) {
   -webkit-box-shadow: inset @x @y @blur rgba(0, 0, 0, @alpha);
@@ -51,6 +60,15 @@
        -o-transition: @prop @time @ease;
       -ms-transition: @prop @time @ease;
           transition: @prop @time @ease;
+}
+
+// no transition
+.transition-none() {
+  -webkit-transition: none;
+     -moz-transition: none;
+       -o-transition: all 0 ease-in;
+      -ms-transition: none;
+          transition: none;
 }
 
 // Linear Gradient
@@ -136,6 +154,12 @@
 
 .webkit-transform(@style: preserve-3d) {
   -webkit-transform-style: @style; // prevents font smoothing when something on page gets transformed */
+}
+
+.box-sizing(@sizing: border-box) {
+  -moz-box-sizing: @sizing;
+  -webkit-box-sizing: @sizing;
+  box-sizing: @sizing;
 }
 
 // CSS Clearfix

@@ -1,4 +1,4 @@
-# Vanilla5 Template v1.7
+# Vanilla5 Template v1.7.1
 
 _Copyright Christopher Bishop 2011-2013._
 
@@ -15,13 +15,17 @@ You may use this template free of charge with no link backs whatsoever. You may 
 * Basic CSS file set up. Just enter your widths, and colors. It doesn't do everything for you, it's just a starter file.
 * Links to jQuery and jQueryUI so you can get started right away.
 * Folders setup for images, includes, and creative.
-* PSD included for the 960grid.
+* PSD included based on the 960grid.
 * Javascript and CSS to fix HTML5 support for IE
 * Uses LESS
 
 If you create a webpage using this template, let me know by sending me a message from www.cibgraphics.com/contact
 
 ###ChangeLog:
+
+####Version 1.7.1:
+
+* New Photoshop mockup file
 
 ####Version 1.7:
 

@@ -1,0 +1,19 @@
+// Useful SCSS Mixins
+// Please use Compass for advanced mixins
+
+
+// REM Calculation with px fallback
+// Requires $font-size variable to be set
+
+
+@function strip-unit($num) {
+  @return $num / ($num * 0 + 1);
+}
+
+@mixin rem-size($value, $property: font-size) {
+  $pxValue: strip-unit($value);
+  $baseValue: strip-unit($font-size);
+  $remValue: ($pxValue / $baseValue);
+  #{$property}: $value; 
+  #{$property}: $remValue + rem;
+}

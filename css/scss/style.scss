@@ -1,0 +1,413 @@
+/*
+-----------------------------------------
+TABLE OF CONTENTS
+
+(The number set before the description is to help find the section using your programs 'find' function)
+
+V01 - Includes - Incusion of CSS/SCSS files
+V02 - Background Highlights
+V03 - Head Tags (HTML & BODY)
+V04 - Containers
+V05 - Main Layout
+V06 - Headers
+V07 - Basics
+V08 - Secondary Basics
+V09 - Branding
+V10 - Navigation
+V11 - Modules
+V12 - Footer
+V13 - Tables
+V14 - Forms
+V15 - Generics
+V16 - Mobile Adjustments
+V17 - Media Queries
+-----------------------------------------
+*/
+
+// V01 - Includes
+
+@import "includes/normalize.scss";
+@import "includes/variables.scss";
+@import "includes/mixins.scss";
+
+
+
+/*
+-----------------------------------------
+V02 - Background Highlights
+-----------------------------------------
+*/
+
+::-moz-selection{
+  background: $select-background;
+  color: $select-text;
+} 
+::selection {
+  background: $select-background;
+  color: $select-text;
+}
+
+
+
+/*
+-----------------------------------------
+V03 - HEAD TAGS
+-----------------------------------------
+*/
+
+* {
+  .box-sizing();
+}
+
+HTML {
+  /* Prevents webpage zooming for mobile devices change orientation */
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  font-size: 16px;
+}
+
+BODY {
+  font-family: $font-sans;
+  background: $base-color;
+  font-size: 62.5%; /* 1em = 10px */
+}
+
+
+
+/*
+-----------------------------------------
+V04 - CONTAINERS
+-----------------------------------------
+*/
+
+
+.container {
+  width: $site-width;
+  margin: 0 auto;
+}
+
+.content {
+  background: $content-background;
+}
+
+
+
+
+/*
+-----------------------------------------
+V05 - MAIN LAYOUT
+-----------------------------------------
+*/
+
+.block-content {
+  margin-bottom: 20px;
+}
+
+
+
+
+
+/*
+-----------------------------------------
+V06 - HEADERS
+-----------------------------------------
+*/
+
+
+h1 {
+  
+}
+
+h2 {
+  
+}
+
+h3 {
+  
+}
+
+h4 {
+  
+}
+
+h5 {
+  
+}
+
+h6 {
+  
+}
+
+
+/*
+-----------------------------------------
+V07 - BASICS
+-----------------------------------------
+*/
+
+
+a {
+  color: $link-color;
+  &:hover {
+    color: $link-hover-light;
+    text-decoration: none;
+  }
+}
+
+p {
+  font-size: 12px;
+  line-height: 1.4em;
+  color: $text-color;
+  margin-bottom: 1.2em;
+}
+
+
+/*
+-----------------------------------------
+V08 - SECONDARY BASICS
+-----------------------------------------
+*/
+
+blockquote {
+  
+}
+
+hr { 
+  
+}
+
+.button {
+  background: ;
+  
+  &:hover { }
+}
+
+
+/*
+-----------------------------------------
+V09 - BRANDING
+-----------------------------------------
+*/
+
+
+.site-masthead {
+  position: relative;
+}
+
+.site-logo a {
+    
+}
+
+
+
+/*
+-----------------------------------------
+V10 - NAVIGATION
+Please use the nav element in HTML5
+-----------------------------------------
+*/
+
+.site-masthead {
+  ul {
+    list-style: none;
+    position: absolute;
+    top: ;
+    left: ;
+
+    li {
+      
+    }
+
+    li a {
+      color: $link-color;
+      &:hover { color: $link-hover-light; }
+    }
+  }
+}
+
+
+
+/*
+-----------------------------------------
+V11 - MODULES
+-----------------------------------------
+*/
+
+
+
+
+
+
+/*
+-----------------------------------------
+V12 - FOOTER
+-----------------------------------------
+*/
+
+
+.site-footer {
+  max-width: 960px;
+  height: ;
+}
+
+
+
+
+/*
+-----------------------------------------
+V13 - TABLES
+-----------------------------------------
+*/
+
+
+table {
+  
+}
+
+thead {
+  
+}
+
+tfoot {
+  
+}
+
+tbody {
+  
+}
+
+tr {
+  
+}
+
+th {
+  
+}
+
+td {
+  
+}
+
+.cell5  {width:5%;}
+.cell10 {width:10%;}
+.cell15 {width:15%;}
+.cell20 {width:20%;}
+.cell25 {width:25%;}
+.cell30 {width:30%;}
+.cell35 {width:35%;}
+.cell40 {width:40%;}
+.cell45 {width:45%;}
+.cell50 {width:50%;}
+.cell55 {width:55%;}
+.cell60 {width:60%;}
+.cell65 {width:65%;}
+.cell70 {width:70%;}
+.cell75 {width:75%;}
+.cell80 {width:80%;}
+.cell85 {width:85%;}
+.cell90 {width:90%;}
+.cell95 {width:95%;}
+
+
+/*
+-----------------------------------------
+V14 - FORMS
+The idea is to put the form inputs in a ul>li so your submit button doesn't inherit text input styles and for easier styling.
+-----------------------------------------
+*/
+
+form {
+  margin: 10px 0;
+}
+
+label {
+  
+}
+
+input{
+  
+}
+
+textarea {
+  
+}
+
+select {
+  
+  option {
+    
+  }
+}
+
+input.submit {
+
+}
+
+::-webkit-input-placeholder { color: $placeholder-color; }
+::-moz-placeholder { color: $placeholder-color; }
+:-ms-input-placeholder { color: $placeholder-color; }
+input:-moz-placeholder { color: $placeholder-color; }
+
+
+/*
+-----------------------------------------
+V15 - GENERICS
+-----------------------------------------
+*/
+
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+
+
+/*
+-----------------------------------------
+V16 - MOBILE ADJUSTMENTS
+-----------------------------------------
+*/
+
+a:link {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, .2);
+}
+
+
+
+/*
+-----------------------------------------
+V17 - Responsive Web Design Queries
+-----------------------------------------
+*/
+
+@import "includes/responsive-1382.scss";
+
+@import "includes/responsive-992.scss";
+
+@import "includes/responsive-768.scss";
+
+@import "includes/responsive-480.scss";

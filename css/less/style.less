@@ -5,87 +5,53 @@ TABLE OF CONTENTS
 (The number set before the description is to help find the section using your programs 'find' function)
 
 V01 - Includes - Incusion of CSS/LESS files
-V02 - LESS Variables - This will not showup in your compiled CSS
-V03 - Background Highlights
-V04 - Head Tags (HTML & BODY)
-V05 - Containers
-V06 - Main Layout
-V07 - Headers
-V08 - Basics
-V09 - Secondary Basics
-V10 - Branding
-V11 - Navigation
-V12 - Pages
-V13 - Footer
-V14 - Tables
-V15 - Forms
-V16 - Generics
-V17 - Mobile Adjustments
-V18 - Media Queries
+V02 - Background Highlights
+V03 - Head Tags (HTML & BODY)
+V04 - Containers
+V05 - Main Layout
+V06 - Headers
+V07 - Basics
+V08 - Secondary Basics
+V09 - Branding
+V10 - Navigation
+V11 - Modules
+V12 - Footer
+V13 - Tables
+V14 - Forms
+V15 - Generics
+V16 - Mobile Adjustments
+V17 - Media Queries
 -----------------------------------------
 */
 
 // V01 - Includes
 
 @import "includes/normalize.less";
+@import "includes/variables.less";
 @import "includes/mixins.less";
 
 
-/*
------------------------------------------
-Start the Styling of your Site Here
------------------------------------------
-*/
-
-
-// V02 - LESS Variables
-
-@site-width: 960px;
-
-@base-color: #;
-@content-background: #;
-
-@text-color: #;
-
-@link-color: #;
-@link-hover-light: lighten(@link-color, 10%);
-@link-hover-dark: darken(@link-color, 10%);
-
-@placeholder-color: #ddd;
-
-// Fonts
-@font-sans: Helvetica Neue, Helvetica, Arial, sans-serif;
-@font-serif: Georgia, Times, "Times New Roman", serif;
-@font-script: 'Great Vibes', cursive;
-@font-mono: "Andale Mono", AndaleMono, monospace;
-
-// Font Size
-@font-size: 12px;
-@font-size-small: (@font-size - 2);
-@font-size-large: (@font-size + 2 );
 
 /*
 -----------------------------------------
-V03 - Background Highlights
-Try to make the background match the main color of your site and make the color easy to read by contrasting the background. 
-Make both sections the same.
+V02 - Background Highlights
 -----------------------------------------
 */
 
 ::-moz-selection{
-  background: ;
-  color: ;
+  background: @select-background;
+  color: @select-text;
 } 
 ::selection {
-  background: ;
-  color: ;
+  background: @select-background;
+  color: @select-text;
 }
 
 
 
 /*
 -----------------------------------------
-V04 - HEAD TAGS
+V03 - HEAD TAGS
 -----------------------------------------
 */
 
@@ -110,7 +76,7 @@ BODY {
 
 /*
 -----------------------------------------
-V05 - CONTAINERS
+V04 - CONTAINERS
 -----------------------------------------
 */
 
@@ -129,12 +95,11 @@ V05 - CONTAINERS
 
 /*
 -----------------------------------------
-V11 - MAIN LAYOUT
+V05 - MAIN LAYOUT
 -----------------------------------------
 */
 
 .block-content {
-  .clearfix();
   margin-bottom: 20px;
 }
 
@@ -144,7 +109,7 @@ V11 - MAIN LAYOUT
 
 /*
 -----------------------------------------
-V07 - HEADERS
+V06 - HEADERS
 -----------------------------------------
 */
 
@@ -176,7 +141,7 @@ h6 {
 
 /*
 -----------------------------------------
-V08 - BASICS
+V07 - BASICS
 -----------------------------------------
 */
 
@@ -199,7 +164,7 @@ p {
 
 /*
 -----------------------------------------
-V09 - SECONDARY BASICS
+V08 - SECONDARY BASICS
 -----------------------------------------
 */
 
@@ -207,8 +172,8 @@ blockquote {
   
 }
 
-.hr { 
-  /* instead of using an hr tag (which is actually more semantic), a div with this class will allow for easier styling */
+hr { 
+  
 }
 
 .button {
@@ -218,68 +183,58 @@ blockquote {
 }
 
 .clear {
+  // For a better clear fix, use the clear-fix class in the less mixins
   clear: both;
 }
-
-// For a better clearfix use .clearfix(); which is contained in the mixins.less
 
 
 /*
 -----------------------------------------
-V10 - BRANDING
+V09 - BRANDING
 -----------------------------------------
 */
 
 
 .site-masthead {
-  max-width: 960px;
-  height: ;
   position: relative;
-  
-  #logo a {
-    display: block;
-    height: ;
-    width: ;
-    position: absolute;
-    top: ;
-    left: ;
-    text-indent: -9999px;
-    background: url('../images/logo.png') no-repeat;
-  }
+}
+
+.site-logo a {
+    
 }
 
 
 
 /*
 -----------------------------------------
-V11 - NAVIGATION
+V10 - NAVIGATION
 Please use the nav element in HTML5
 -----------------------------------------
 */
 
+.site-masthead {
+  ul {
+    list-style: none;
+    position: absolute;
+    top: ;
+    left: ;
 
-.site-masthead ul {
-  list-style: none;
-  position: absolute;
-  top: ;
-  left: ;
+    li {
+      
+    }
 
-  li {
-    
-  }
-
-  li a {
-    color: @link-color;
-    &:hover { color: @link-hover-light; }
+    li a {
+      color: @link-color;
+      &:hover { color: @link-hover-light; }
+    }
   }
 }
 
 
 
-
 /*
 -----------------------------------------
-V12 - PAGES
+V11 - MODULES
 -----------------------------------------
 */
 
@@ -290,7 +245,7 @@ V12 - PAGES
 
 /*
 -----------------------------------------
-V13 - FOOTER
+V12 - FOOTER
 -----------------------------------------
 */
 
@@ -305,7 +260,7 @@ V13 - FOOTER
 
 /*
 -----------------------------------------
-V14 - TABLES
+V13 - TABLES
 -----------------------------------------
 */
 
@@ -338,7 +293,7 @@ td {
   
 }
 
-.cell5 {width:5%;}
+.cell5  {width:5%;}
 .cell10 {width:10%;}
 .cell15 {width:15%;}
 .cell20 {width:20%;}
@@ -361,7 +316,7 @@ td {
 
 /*
 -----------------------------------------
-V15 - FORMS
+V14 - FORMS
 The idea is to put the form inputs in a ul>li so your submit button doesn't inherit text input styles and for easier styling.
 -----------------------------------------
 */
@@ -401,7 +356,7 @@ input:-moz-placeholder { color: @placeholder-color; }
 
 /*
 -----------------------------------------
-V16 - GENERICS
+V15 - GENERICS
 -----------------------------------------
 */
 
@@ -414,15 +369,15 @@ V16 - GENERICS
   float: right;
 }
 
-.text_left {
+.text-left {
   text-align: left;
 }
 
-.text_center {
+.text-center {
   text-align: center;
 }
 
-.text_right {
+.text-right {
   text-align: right;
 }
 
@@ -438,7 +393,7 @@ V16 - GENERICS
 
 /*
 -----------------------------------------
-V17 - MOBILE ADJUSTMENTS
+V16 - MOBILE ADJUSTMENTS
 -----------------------------------------
 */
 
@@ -450,32 +405,14 @@ a:link {
 
 /*
 -----------------------------------------
-V18 - Responsive Web Design Queries
+V17 - Responsive Web Design Queries
 -----------------------------------------
 */
 
-@media only screen and (min-width: 1382px) {
-  
-}
+@import "includes/responsive-1382.less";
 
-@media only screen and (max-width: 992px) {
-  
-}
+@import "includes/responsive-992.less";
 
-@media only screen and (max-width: 768px) {
-  
-  .layout-stack-tablet {
-    float: none !important;
-    width: auto !important;
-  }
-  
-}
+@import "includes/responsive-768.less";
 
-@media only screen and (max-width: 480px) {
-  
-  .layout-stack-mobile {
-    float: none !important;
-    width: auto !important;
-  }
-  
-}
+@import "includes/responsive-480.less";

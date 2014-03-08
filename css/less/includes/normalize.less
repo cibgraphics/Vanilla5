@@ -114,16 +114,15 @@ img {
   border: none; /* Removes purple border caused by FireFox */
 }
 
-.clear-fix:before,
-.clear-fix:after {
-  content: " ";
-  display: table;
-}
-
-.clear-fix:after {
-  clear: both;
-}
-
 .clear-fix {
   *zoom: 1;
+
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+  }
+  &:after {
+    clear: both;
+  }
 }

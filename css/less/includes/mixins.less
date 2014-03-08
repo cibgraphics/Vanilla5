@@ -1,22 +1,23 @@
 // Useful LESS Mixins
 
+// REM Calculation with px fallback
+// Requires @font-size variable to be set
+.rem-size(@value, @property: font-size) {
+  @pxValue: unit(@value);
+  @baseValue: unit(@font-size);
+  @remValue: (@pxValue / @baseValue);
+  @{property}: @value; 
+  @{property}: unit(@remValue,rem);
+}
 
 // Border Radius - All Equal
 .border-radius (@radius: 5px) {
-  -webkit-border-radius: @radius;
-     -moz-border-radius: @radius;
-      -ms-border-radius: @radius;
-       -o-border-radius: @radius;
-          border-radius: @radius;
+  border-radius: @radius;
 }
 
 // Border Radius - Custom Sides
 .border-radius-custom (@topleft: 5px, @topright: 5px, @bottomright: 5px, @bottomleft: 5px) {
-  -webkit-border-radius: @topleft @topright @bottomright @bottomleft;
-     -moz-border-radius: @topleft @topright @bottomright @bottomleft;
-      -ms-border-radius: @topleft @topright @bottomright @bottomleft;
-       -o-border-radius: @topleft @topright @bottomright @bottomleft;
-          border-radius: @topleft @topright @bottomright @bottomleft;
+  border-radius: @topleft @topright @bottomright @bottomleft;
 }
 
 // Box Shadow
@@ -31,18 +32,12 @@
 // Box Shadow Color
 .box-shadow-color (@x: 0px, @y: 3px, @blur: 5px, @color) {
   -webkit-box-shadow: @x @y @blur @color;
-     -moz-box-shadow: @x @y @blur @color;
-      -ms-box-shadow: @x @y @blur @color;
-       -o-box-shadow: @x @y @blur @color;
           box-shadow: @x @y @blur @color;
 }
 
 // Inner Shadow
 .inner-shadow (@x: 0, @y: 1px, @blur: 2px, @alpha: 0.25) {
   -webkit-box-shadow: inset @x @y @blur rgba(0, 0, 0, @alpha);
-     -moz-box-shadow: inset @x @y @blur rgba(0, 0, 0, @alpha);
-      -ms-box-shadow: inset @x @y @blur rgba(0, 0, 0, @alpha);
-       -o-box-shadow: inset @x @y @blur rgba(0, 0, 0, @alpha);
           box-shadow: inset @x @y @blur rgba(0, 0, 0, @alpha);
 }
 
@@ -50,61 +45,71 @@
 .animation (@name, @duration: 300ms, @delay: 0, @ease: ease) {
   -webkit-animation: @name @duration @delay @ease;
      -moz-animation: @name @duration @delay @ease;
-      -ms-animation: @name @duration @delay @ease;
+          animation: @name @duration @delay @ease;
 }
 
 // Transition
 .transition (@prop: all, @time: 0.2s, @ease: linear) {
   -webkit-transition: @prop @time @ease;
-     -moz-transition: @prop @time @ease;
-       -o-transition: @prop @time @ease;
-      -ms-transition: @prop @time @ease;
           transition: @prop @time @ease;
 }
 
-// no transition
+// No Transition
 .transition-none() {
   -webkit-transition: none;
-     -moz-transition: none;
-       -o-transition: all 0 ease-in;
-      -ms-transition: none;
           transition: none;
+}
+
+// Rotate
+.rotate(@degrees) {
+  -webkit-transform: rotate(@degrees);
+      -ms-transform: rotate(@degrees); // IE9 only
+          transform: rotate(@degrees);
+}
+
+// Scale
+.scale(@ratio; @ratio-y...) {
+  -webkit-transform: scale(@ratio, @ratio-y);
+      -ms-transform: scale(@ratio, @ratio-y); // IE9 only
+          transform: scale(@ratio, @ratio-y);
+}
+
+// Translate
+.translate(@x; @y) {
+  -webkit-transform: translate(@x, @y);
+      -ms-transform: translate(@x, @y); // IE9 only
+          transform: translate(@x, @y);
+}
+
+// Skew
+.skew(@x; @y) {
+  -webkit-transform: skew(@x, @y);
+      -ms-transform: skewX(@x) skewY(@y); // IE9 only
+          transform: skew(@x, @y);
 }
 
 // Linear Gradient
 .gradient (@origin: top, @start: #ffffff, @stop: #e2e2e2) {
   background-color: @start;
   background-image: -webkit-linear-gradient(@origin, @start, @stop);
-  background-image: -moz-linear-gradient(@origin, @start, @stop);
-  background-image: -o-linear-gradient(@origin, @start, @stop);
-  background-image: -ms-linear-gradient(@origin, @start, @stop);
   background-image: linear-gradient(@origin, @start, @stop);
 }
 
 .gradient-trio (@origin: top, @start: #ffffff, @stop-color: #f2f2f2, @stop-position: 50%, @end: #e2e2e2) {
-  background: @start;
-  background: -moz-linear-gradient(@origin, @start 0%, @stop-color @stop-position, @end 100%);
-  background: -webkit-linear-gradient(@origin, @start 0%,@stop-color @stop-position,@end 100%);
-  background: -o-linear-gradient(@origin, @start 0%,@stop-color @stop-position,@end 100%);
-  background: -ms-linear-gradient(@origin, @start 0%,@stop-color @stop-position,@end 100%);
-  background: linear-gradient(@origin, @start 0%,@stop-color @stop-position,@end 100%);
+  background-color: @start;
+  background-image: -webkit-linear-gradient(@origin, @start 0%,@stop-color @stop-position,@end 100%);
+  background-image: linear-gradient(@origin, @start 0%,@stop-color @stop-position,@end 100%);
 }
 
 // Quick Gradient - needs background color
 .quick-gradient (@origin: left, @alpha: 0.2) {
   background-image: -webkit-linear-gradient(@origin, rgba(0,0,0,0.0), rgba(0,0,0,@alpha));
-  background-image: -moz-linear-gradient(@origin, rgba(0,0,0,0.0), rgba(0,0,0,@alpha));
-  background-image: -o-linear-gradient(@origin, rgba(0,0,0,0.0), rgba(0,0,0,@alpha));
-  background-image: -ms-linear-gradient(@origin, rgba(0,0,0,0.0), rgba(0,0,0,@alpha));
   background-image: linear-gradient(@origin, rgba(0,0,0,0.0), rgba(0,0,0,@alpha));
 }
 
 // Quick White Gradient - needs background color
 .quick-gradient-white (@origin: top, @alpha: 0.25) {
   background-image: -webkit-linear-gradient(@origin, rgba(255,255,255,@alpha), rgba(255,255,255,.0));
-  background-image: -moz-linear-gradient(@origin, rgba(255,255,255,@alpha), rgba(255,255,255,.0));
-  background-image: -o-linear-gradient(@origin,rgba(255,255,255,@alpha), rgba(255,255,255,.0));
-  background-image: -ms-linear-gradient(@origin, rgba(255,255,255,@alpha), rgba(255,255,255,.0));
   background-image: linear-gradient(@origin, rgba(255,255,255,@alpha), rgba(255,255,255,.0));
 }
 
@@ -125,17 +130,12 @@
 
 // Opacity
 .opacity (@opacity: 0.5) {
-  -webkit-opacity: @opacity;
-     -moz-opacity: @opacity;
-          opacity: @opacity;
-}
+  opacity: @opacity;
 
-// Opacity IE6-7 - Use with Opacity Mixin 
-.transparent (@opacityIE: 0.5) {
-  @ie-transparency: (@opacityIE * 100);
+  // IE Only
+  @ie-transparency: (@opacity * 100);
   zoom: 1;
   filter: alpha(opacity=@ie-transparency);
-  opacity: @opacityIE;
 }
 
 .position (@position: absolute, @top: auto, @right: auto, @bottom: auto, @left: auto) {
@@ -152,25 +152,8 @@
   overflow: hidden;
 }
 
-.webkit-transform(@style: preserve-3d) {
-  -webkit-transform-style: @style; // prevents font smoothing when something on page gets transformed */
-}
-
 .box-sizing(@sizing: border-box) {
      -moz-box-sizing: @sizing;
   -webkit-box-sizing: @sizing;
           box-sizing: @sizing;
-}
-
-// CSS Clearfix
-.clearfix() {
-  *zoom: 1;
-  &:before,
-  &:after {
-    display: table;
-    content: "";
-  }
-  &:after {
-    clear: both;
-  }
 }

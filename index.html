@@ -29,7 +29,7 @@
       
       <header class="site-masthead">
         
-        <div id="logo"><a href="#">Vanilla 5</a></div>
+        <div class="site-logo"><a href="#">Vanilla 5</a></div>
         
         <nav>
           <ul>
@@ -54,29 +54,18 @@
       
     </div><!-- End .container -->
     
-    <!-- Load jQuery & jQueryUI from CDN. If CDN is not available, load from local copy -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+    <!-- Load jQuery from CDN. If CDN is not available, load from local copy -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script type="text/javascript">
-      if (typeof jQuery == 'undefined')
-      {
-        document.write(unescape("%3Cscript src='js/jquery.js' type='text/javascript'%3E%3C/script%3E"));
-        document.write(unescape("%3Cscript src='js/jqueryui.js' type='text/javascript'%3E%3C/script%3E"));
+      if (typeof jQuery == 'undefined') {
+        document.write(unescape("%3Cscript src='js//lib/jquery.js' type='text/javascript'%3E%3C/script%3E"));
       }
     </script>
-    <script src="js/custom.js"></script>
-    <script type="text/javascript">
 
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', '']); //Enter tracking code for your Google Analytics between the ''
-      _gaq.push(['_trackPageview']);
-
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-
-    </script>
+    <!-- Custom JS -->
+    <script src="js/app.js"></script>
+    
+    <!-- Google Anayltics - Modify to enter your tracking code -->
+    <script src="js/lib/google-analytics.js"></script>
   </body>
 </html>

@@ -1,6 +1,6 @@
-# Vanilla5 Template v1.7.1
+# Vanilla5 Template v2.0
 
-_Copyright Christopher Bishop 2011-2013._
+_Copyright Christopher Bishop 2011-2014._
 
 Vanilla5 is a base starter kit with everything you need for the majority of your project. HTML5 ready. Mobile Ready. Get started on your projects faster with Vanilla5.
 
@@ -22,6 +22,22 @@ You may use this template free of charge with no link backs whatsoever. You may 
 If you create a webpage using this template, let me know by sending me a message from www.cibgraphics.com/contact
 
 ###ChangeLog:
+
+####Version 2.0:
+
+* Reached Version 2!!!!!
+* Now supports SCSS!
+* Updated LESS mixins to included relavant vender prefixes
+* Orginizational improvements
+* Updated jQuery to latest version and moved to lib folder
+* Deleted reference to jQueryUI (if you still want this you need to include it yourself)
+* Updated Google Analyics code and moved to it's own file
+* Moved responsive LESS/SCSS files to their own files
+* Cleaned up clear fix code
+* Renamed custom.js to app.js
+* New assets for iOS icon and Windows Tile
+* Adds LESS/SCSS mixin for calculating REM sizes
+
 
 ####Version 1.7.1:
 

@@ -17,3 +17,12 @@
   #{$property}: $value; 
   #{$property}: $remValue + rem;
 }
+
+
+// Box Sizing
+@mixin box-sizing($sizing: border-box) {
+     -moz-box-sizing: $sizing;
+  -webkit-box-sizing: $sizing;
+          box-sizing: $sizing;
+}
+

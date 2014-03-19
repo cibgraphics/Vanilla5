@@ -14,7 +14,7 @@ V07 - Basics
 V08 - Secondary Basics
 V09 - Branding
 V10 - Navigation
-V11 - Pages
+V11 - Modules
 V12 - Footer
 V13 - Tables
 V14 - Forms
@@ -151,8 +151,6 @@ Start the Styling of your Site Here
 /*
 -----------------------------------------
 V02 - Background Highlights
-Try to make the background match the main color of your site and make the color easy to read by contrasting the background. 
-Make both sections the same.
 -----------------------------------------
 */
 
@@ -183,7 +181,7 @@ HTML {
   /* Prevents webpage zooming for mobile devices change orientation */
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 BODY {
@@ -202,7 +200,7 @@ V04 - CONTAINERs
 
 
 .container {
-  width: 960px;
+  max-width: 960px;
   margin: 0 auto;
 }
 
@@ -333,20 +331,11 @@ V09 - BRANDING
 
 
 .site-masthead {
-  max-width: 960px;
-  height: ;
   position: relative;
 }
 
-.site-masthead #logo a{
-  display: block;
-  height: ;
-  width: ;
-  position: absolute;
-  top: ;
-  left: ;
-  text-indent: -9999px;
-  background: url('images/logo.png') no-repeat;
+.site-logo a{
+
 }
 
 /*
@@ -379,7 +368,7 @@ Please use the nav element in HTML5
 
 /*
 -----------------------------------------
-V11 - PAGES
+V11 - Modules
 -----------------------------------------
 */
 
@@ -394,8 +383,6 @@ V12 - FOOTER
 
 
 .site-footer {
-  max-width: 960px;
-  height: ;
 }
 
 
@@ -488,7 +475,7 @@ option {
   
 }
 
-input.submit {
+input[type="submit"] {
   
 }
 
@@ -514,15 +501,15 @@ V15 - GENERICS
   float: right;
 }
 
-.text_left {
+.text-left {
   text-align: left;
 }
 
-.text_center {
+.text-center {
   text-align: center;
 }
 
-.text_right {
+.text-right {
   text-align: right;
 }
 

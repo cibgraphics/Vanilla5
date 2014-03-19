@@ -63,13 +63,12 @@ HTML {
   /* Prevents webpage zooming for mobile devices change orientation */
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  font-size: 16px;
 }
 
 BODY {
   font-family: @font-sans;
   background: @base-color;
-  font-size: 62.5%; /* 1em = 10px */
+  font-size: @font-size;
 }
 
 
@@ -82,7 +81,7 @@ V04 - CONTAINERS
 
 
 .container {
-  width: @site-width;
+  max-width: @site-width;
   margin: 0 auto;
 }
 
@@ -148,6 +147,7 @@ V07 - BASICS
 
 a {
   color: @link-color;
+
   &:hover {
     color: @link-hover-light;
     text-decoration: none;
@@ -182,11 +182,6 @@ hr {
   &:hover { }
 }
 
-.clear {
-  // For a better clear fix, use the clear-fix class in the less mixins
-  clear: both;
-}
-
 
 /*
 -----------------------------------------
@@ -214,10 +209,6 @@ Please use the nav element in HTML5
 
 .site-masthead {
   ul {
-    list-style: none;
-    position: absolute;
-    top: ;
-    left: ;
 
     li {
       
@@ -225,6 +216,7 @@ Please use the nav element in HTML5
 
     li a {
       color: @link-color;
+
       &:hover { color: @link-hover-light; }
     }
   }
@@ -251,8 +243,6 @@ V12 - FOOTER
 
 
 .site-footer {
-  max-width: 960px;
-  height: ;
 }
 
 
@@ -344,7 +334,7 @@ select {
   }
 }
 
-input.submit {
+input[type="submit"] {
 
 }
 

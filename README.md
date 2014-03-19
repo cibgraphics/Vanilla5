@@ -9,7 +9,7 @@ Vanilla5 is a HTML5 based foundation to kickstart the majority of your project. 
 ###Features:
 
 * Basic HTML5 template with a header, page contents, and a footer
-* Basic CSS, LESS, or SCSS file set up with mixins, variables, includes (where applicable), and responsive stylesheets
+* Basic CSS, LESS, or SCSS file set up with CSS reset, mixins, variables, includes (where applicable), and responsive stylesheets.
 * Print stylesheet included
 * Links to the latest jQuery (local and CDN)
 * Folders setup for images, includes, and creative
@@ -29,17 +29,8 @@ To use just download the latest copy and extract the files to where your site wi
 
 Everything else depends on your workflow.
 
-#### Automatically done for you
-* Resets your stylesheet
-* CDN based HTML5 shiv for IE
-* Google Analytics (just enter your tracking code)
-* iOS icon. You may want to change the image file to match your site
-* Windows tile assets. Image and HTML code already included. Like the iOS icon, you may want to change the image asset
-* Code for responsive design. This includes the proper meta tags and CSS media queries.
-* Print stylesheet. You may want to expand on whats there.
-
 #### What is not done
-* Magic. Seriously, this is a foundation, not a framework. You still have to style your site. I do not assume styles like other (much bloated) frameworks.
+Magic. Seriously, this is a foundation, not a framework. You still have to style your site. I do not assume styles like other (much bloated) frameworks.
 
 # Tips and Tricks
 

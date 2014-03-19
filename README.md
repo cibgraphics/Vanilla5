@@ -1,27 +1,116 @@
-# Vanilla5 Template v2.0
+# Vanilla5 v2.0
 
 _Copyright Christopher Bishop 2011-2014._
 
-Vanilla5 is a base starter kit with everything you need for the majority of your project. HTML5 ready. Mobile Ready. Get started on your projects faster with Vanilla5.
+## What is Vanilla5?
 
-You may use this template free of charge with no link backs whatsoever. You may NOT sell this, only give it away to others. If you do give it away, you must credit me by leaving this README with the files unchanged as well as the HTML comments.
-
-
-##Notes-
+Vanilla5 is a HTML5 based foundation to kickstart the majority of your project. Perfectly set up to be HTML5 and mobile ready (responsive design). Also uses LESS and SCSS, but you are not forced to use them.
 
 ###Features:
 
 * Basic HTML5 template with a header, page contents, and a footer
-* Basic CSS file set up. Just enter your widths, and colors. It doesn't do everything for you, it's just a starter file.
-* Links to jQuery and jQueryUI so you can get started right away.
-* Folders setup for images, includes, and creative.
+* Basic CSS, LESS, or SCSS file set up with mixins, variables, includes (where applicable), and responsive stylesheets
+* Print stylesheet included
+* Links to the latest jQuery (local and CDN)
+* Folders setup for images, includes, and creative
+* iOS touch icon and Windows Tile included and setup
 * PSD included based on the 960grid.
 * Javascript and CSS to fix HTML5 support for IE
-* Uses LESS
+* Set up for Google Analytics
+
+
+You may use this template free of charge with no link backs whatsoever. You may NOT sell this, only give it away to others. If you do give it away, you must credit me by leaving this README with the files unchanged as well as the HTML comments.
 
 If you create a webpage using this template, let me know by sending me a message from www.cibgraphics.com/contact
 
-###ChangeLog:
+# How to use
+
+To use just download the latest copy and extract the files to where your site will be. Thats it.
+
+Everything else depends on your workflow.
+
+#### Automatically done for you
+* Resets your stylesheet
+* CDN based HTML5 shiv for IE
+* Google Analytics (just enter your tracking code)
+* iOS icon. You may want to change the image file to match your site
+* Windows tile assets. Image and HTML code already included. Like the iOS icon, you may want to change the image asset
+* Code for responsive design. This includes the proper meta tags and CSS media queries.
+* Print stylesheet. You may want to expand on whats there.
+
+#### What is not done
+* Magic. Seriously, this is a foundation, not a framework. You still have to style your site. I do not assume styles like other (much bloated) frameworks.
+
+# Tips and Tricks
+
+There are a lot of things that Vanilla5 does for you automatically, a lot you have to do yourself. Here are a couple helpers that I have included.
+
+
+## Clearing a Float
+
+Included in Vanilla5 is a progressive way to clear floats. All it uses is a single class name of clear-fix on the element or container that is floated.
+
+
+```html
+<div class="clear-fix">
+  <div class="left"></div>
+  <div class="right"></div>
+</div>
+```
+
+___
+
+## LESS or SCSS Variables
+
+Vanilla5 is already set up with some cool variables. You can find these in the css -> less -> variables.less or css -> scss -> variables.scss
+
+Make sure you edit these instead of taking out their references. They can be really useful.
+___
+
+## Automatic REM conversion using LESS or SCSS
+
+You can change px into rems automatically using included LESS or SCSS mixins.
+
+** ALERT: You have to have the font-size variable set in order for this to work!!** You can find it in your variables file.
+
+**For SCSS:**
+
+```css
+p {
+  @include rem-size(20px);
+}
+```
+**For LESS:**
+
+```css
+p {
+  .rem-size(20px);
+}
+```
+Compiles to:
+```css
+p {
+  font-size: 20px;
+  font-size: 2rem; // this value depends on what you have set as your font-size base
+}
+```
+
+---
+
+## Google Analytics
+
+Included in Vanilla5 is the code for Google Analytics. Visit their webpage and create a tracking code.
+
+Inserting them into Vanilla5 is super easy. Open the google-analytics.js file located in js -> lib folder.
+
+All you need to do is edit the two javascript variables with your information.
+
+```javascript
+var trackingID = '',
+    URL        = '';
+```
+
+#ChangeLog:
 
 ####Version 2.0:
 
@@ -37,6 +126,7 @@ If you create a webpage using this template, let me know by sending me a message
 * Renamed custom.js to app.js
 * New assets for iOS icon and Windows Tile
 * Adds LESS/SCSS mixin for calculating REM sizes
+* Updated Readme with additional information
 
 
 ####Version 1.7.1:
@@ -137,7 +227,7 @@ If you create a webpage using this template, let me know by sending me a message
 * Updated CDN & Local JS
 * CSS additions
 * Mobile First media queries
-    
+
 ####Version 0.9.5:
 
 * Updated CDN
@@ -190,4 +280,3 @@ If you create a webpage using this template, let me know by sending me a message
 ####Version 0.3:
 
 * Official launch to public
-

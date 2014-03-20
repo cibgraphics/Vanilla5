@@ -229,7 +229,6 @@ V04 - CONTAINERS
 
 
 
-
 /*
 -----------------------------------------
 V05 - MAIN LAYOUT
@@ -335,9 +334,11 @@ V09 - BRANDING
   position: relative;
 }
 
-.site-logo a{
+.site-logo a {
 
 }
+
+
 
 /*
 -----------------------------------------
@@ -381,7 +382,7 @@ V12 - FOOTER
 
 
 .site-footer {
-  
+
 }
 
 
@@ -453,7 +454,7 @@ form {
   margin: 10px 0;
 }
 
-label{
+label {
   
 }
 
@@ -474,7 +475,7 @@ option {
 }
 
 input[type="submit"] {
-  
+
 }
 
 ::-webkit-input-placeholder { color: #ddd; }

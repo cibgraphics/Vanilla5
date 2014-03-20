@@ -140,12 +140,12 @@ img {
   border: none; /* Removes purple border caused by FireFox */
 }
 
-
-/* Clearing */
+/* Clear Div (not suggested) */
 .clear {
   clear: both;
 }
 
+/* Clear Fix */
 .clear-fix:before,
 .clear-fix:after {
   content: " ";

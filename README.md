@@ -53,7 +53,7 @@ ___
 
 ## LESS or SCSS Variables
 
-Vanilla5 is already set up with some cool variables. You can find these in the css -> less -> variables.less or css -> scss -> variables.scss
+Vanilla5 is already set up with some cool variables. You can find these in the css -> less -> includes -> variables.less or css -> scss -> includes -> variables.scss
 
 Make sure you edit these instead of taking out their references. They can be really useful.
 ___

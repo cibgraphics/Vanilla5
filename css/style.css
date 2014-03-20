@@ -4,7 +4,7 @@ TABLE OF CONTENTS
 
 (The number set before the description is to help find the section using your programs 'find' function)
 
-V01 - Rest
+V01 - Reset
 V02 - Background Highlights
 V03 - Head Tags (HTML & BODY)
 V04 - Containers
@@ -21,6 +21,12 @@ V14 - Forms
 V15 - Generics
 V16 - Mobile Adjustments
 V17 - Media Queries
+-----------------------------------------
+*/
+
+/*
+-----------------------------------------
+V01 - Reset
 -----------------------------------------
 */
 
@@ -163,13 +169,6 @@ img {
 
 /*
 -----------------------------------------
-Start the Styling of your Site Here
------------------------------------------
-*/
-
-
-/*
------------------------------------------
 V02 - Background Highlights
 -----------------------------------------
 */
@@ -213,7 +212,7 @@ BODY {
 
 /*
 -----------------------------------------
-V04 - CONTAINERs
+V04 - CONTAINERS
 -----------------------------------------
 */
 
@@ -233,7 +232,7 @@ V04 - CONTAINERs
 
 /*
 -----------------------------------------
-V10 - MAIN LAYOUT
+V05 - MAIN LAYOUT
 -----------------------------------------
 */
 
@@ -367,7 +366,7 @@ Please use the nav element in HTML5
 
 /*
 -----------------------------------------
-V11 - Modules
+V11 - MODULES
 -----------------------------------------
 */
 
@@ -423,7 +422,7 @@ td {
   
 }
 
-.cell5 {width:5%;}
+.cell5  {width:5%;}
 .cell10 {width:10%;}
 .cell15 {width:15%;}
 .cell20 {width:20%;}
@@ -447,7 +446,6 @@ td {
 /*
 -----------------------------------------
 V14 - FORMS
-The idea is to put the form inputs in a ul>li so your submit button doesn't inherit text input styles.
 -----------------------------------------
 */
 

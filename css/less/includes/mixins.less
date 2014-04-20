@@ -86,16 +86,16 @@
 }
 
 // Linear Gradient
-.gradient (@origin: top, @start: #ffffff, @stop: #e2e2e2) {
+.gradient (@origin: bottom, @start: #ffffff, @stop: #e2e2e2) {
   background-color: @start;
-  background-image: -webkit-linear-gradient(@origin, @start, @stop);
-  background-image: linear-gradient(@origin, @start, @stop);
+  background-image: -webkit-linear-gradient(to @origin, @start 0%, @stop 100%);
+  background-image: linear-gradient(to @origin, @start 0%, @stop 100%);
 }
 
-.gradient-trio (@origin: top, @start: #ffffff, @stop-color: #f2f2f2, @stop-position: 50%, @end: #e2e2e2) {
+.gradient-trio (@origin: bottom, @start: #ffffff, @stop-color: #f2f2f2, @stop-position: 50%, @end: #e2e2e2) {
   background-color: @start;
-  background-image: -webkit-linear-gradient(@origin, @start 0%,@stop-color @stop-position,@end 100%);
-  background-image: linear-gradient(@origin, @start 0%,@stop-color @stop-position,@end 100%);
+  background-image: -webkit-linear-gradient(to @origin, @start 0%,@stop-color @stop-position, @end 100%);
+  background-image: linear-gradient(to @origin, @start 0%, @stop-color @stop-position, @end 100%);
 }
 
 // Quick Gradient - needs background color

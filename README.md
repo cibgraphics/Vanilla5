@@ -1,4 +1,4 @@
-# Vanilla5 v2.0
+# Vanilla5 v2.1
 
 _Copyright Christopher Bishop 2011-2014._
 
@@ -102,6 +102,10 @@ var trackingID = '',
 ```
 
 #ChangeLog:
+
+####Version 2.1:
+
+* Fixes LESS gradient mixin
 
 ####Version 2.0:
 

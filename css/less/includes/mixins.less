@@ -105,9 +105,9 @@
 }
 
 // Quick White Gradient - needs background color
-.quick-gradient-white (@origin: top, @alpha: 0.25) {
-  background-image: -webkit-linear-gradient(@origin, rgba(255,255,255,@alpha), rgba(255,255,255,.0));
-  background-image: linear-gradient(@origin, rgba(255,255,255,@alpha), rgba(255,255,255,.0));
+.quick-gradient-white (@origin: bottom, @alpha: 0.25) {
+  background-image: -webkit-linear-gradient(to @origin, rgba(255,255,255,@alpha) 0%, rgba(255,255,255,.0) 100%);
+  background-image: linear-gradient(to @origin, rgba(255,255,255,@alpha) 0%, rgba(255,255,255,.0) 100%);
 }
 
 // Webkit Reflection

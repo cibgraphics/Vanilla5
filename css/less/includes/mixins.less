@@ -6,7 +6,7 @@
   @pxValue: unit(@value);
   @baseValue: unit(@font-size);
   @remValue: (@pxValue / @baseValue);
-  @{property}: @value; 
+  @{property}: @value;
   @{property}: unit(@remValue,rem);
 }
 
@@ -99,13 +99,13 @@
 }
 
 // Quick Gradient - needs background color
-.quick-gradient (@origin: left, @alpha: 0.2) {
-  background-image: -webkit-linear-gradient(@origin, rgba(0,0,0,0.0), rgba(0,0,0,@alpha));
-  background-image: linear-gradient(@origin, rgba(0,0,0,0.0), rgba(0,0,0,@alpha));
+.quick-gradient (@origin: top, @alpha: 0.2) {
+  background-image: -webkit-linear-gradient(@origin, rgba(0,0,0,0.0) 0%, rgba(0,0,0,@alpha) 100%);
+  background-image: linear-gradient(@origin, rgba(0,0,0,0.0) 0%, rgba(0,0,0,@alpha) 100%);
 }
 
 // Quick White Gradient - needs background color
-.quick-gradient-white (@origin: bottom, @alpha: 0.25) {
+.quick-gradient-white (@origin: top, @alpha: 0.25) {
   background-image: -webkit-linear-gradient(to @origin, rgba(255,255,255,@alpha) 0%, rgba(255,255,255,.0) 100%);
   background-image: linear-gradient(to @origin, rgba(255,255,255,@alpha) 0%, rgba(255,255,255,.0) 100%);
 }

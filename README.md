@@ -1,4 +1,4 @@
-# Vanilla5 v2.1
+# Vanilla5 v2.2
 
 _Copyright Christopher Bishop 2011-2014._
 
@@ -102,6 +102,11 @@ var trackingID = '',
 ```
 
 #ChangeLog:
+
+####Version 2.2:
+
+* Changes starter position for quick gradient LESS mixin
+* Fixes syntax for quick gradient LESS mixin
 
 ####Version 2.1:
 

@@ -42,6 +42,8 @@ Grunt is a Javascript task runner build upon Node.js. This is super helpful for 
 
 The files included are the basics. You still need to know how to install the Grunt CLI and Grunt plugins.
 
+---
+
 ## Clearing a Float
 
 Included in Vanilla5 is a progressive way to clear floats. All it uses is a single class name of clear-fix on the element or container that is floated.

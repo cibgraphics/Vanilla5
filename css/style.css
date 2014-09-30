@@ -1,32 +1,6 @@
 /*
 -----------------------------------------
-TABLE OF CONTENTS
-
-(The number set before the description is to help find the section using your programs 'find' function)
-
-V01 - Normalize
-V02 - Background Highlights
-V03 - Head Tags (HTML & BODY)
-V04 - Containers
-V05 - Main Layout
-V06 - Headers
-V07 - Basics
-V08 - Secondary Basics
-V09 - Branding
-V10 - Navigation
-V11 - Modules
-V12 - Footer
-V13 - Tables
-V14 - Forms
-V15 - Generics
-V16 - Mobile Adjustments
-V17 - Media Queries
------------------------------------------
-*/
-
-/*
------------------------------------------
-V01 - NORMALIZE
+NORMALIZE
 -----------------------------------------
 */
 
@@ -34,7 +8,7 @@ V01 - NORMALIZE
 html5doctor.com Reset Stylesheet
 v1.6.1
 Last Updated: 2010-09-17
-Author: Richard Clark - http://richclarkdesign.com 
+Author: Richard Clark - http://richclarkdesign.com
 Twitter: @rich_clark
 
 Added reset by Christopher Bishop
@@ -49,7 +23,7 @@ b, i,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure, 
+article, aside, canvas, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, summary,
 time, mark, audio, video {
   margin:0;
@@ -66,9 +40,9 @@ body {
 }
 
 
-/* Tell the browser to render HTML 5 elements as block */ 
+/* Tell the browser to render HTML 5 elements as block */
 article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section { 
+footer,header,hgroup,menu,nav,section {
   display:block;
 }
 
@@ -100,7 +74,7 @@ ins {
 /* change colours to suit your needs */
 mark {
   background-color:#ff9;
-  color:#000; 
+  color:#000;
   font-style:italic;
   font-weight:bold;
 }
@@ -124,7 +98,7 @@ table {
 hr {
   display:block;
   height:1px;
-  border:0;   
+  border:0;
   border-top:1px solid #cccccc;
   margin:1em 0;
   padding:0;
@@ -140,7 +114,7 @@ ol, ul {
 
 a:focus {
   outline: none; /* Removes dotted outline caused by FireFox */
-} 
+}
 
 img {
   border: none; /* Removes purple border caused by FireFox */
@@ -169,14 +143,14 @@ img {
 
 /*
 -----------------------------------------
-V02 - Background Highlights
+Background Highlights
 -----------------------------------------
 */
 
 ::-moz-selection{
   background: ;
   color: ;
-} 
+}
 ::selection {
   background: ;
   color: ;
@@ -186,7 +160,7 @@ V02 - Background Highlights
 
 /*
 -----------------------------------------
-V03 - HEAD TAGS
+HEAD TAGS
 -----------------------------------------
 */
 
@@ -204,7 +178,6 @@ HTML {
 
 BODY {
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  background: ;
   font-size: 62.5%; /* 1em = 10px */
 }
 
@@ -212,7 +185,7 @@ BODY {
 
 /*
 -----------------------------------------
-V04 - CONTAINERS
+CONTAINERS
 -----------------------------------------
 */
 
@@ -228,266 +201,9 @@ V04 - CONTAINERS
 
 
 
-
 /*
 -----------------------------------------
-V05 - MAIN LAYOUT
------------------------------------------
-*/
-
-.block-content {
-  margin-bottom: 20px;
-}
-
-
-
-
-
-/*
------------------------------------------
-V06 - HEADERS
------------------------------------------
-*/
-
-
-h1 {
-  
-}
-
-h2 {
-  
-}
-
-h3 {
-  
-}
-
-h4 {
-  
-}
-
-h5 {
-  
-}
-
-h6 {
-  
-}
-
-
-/*
------------------------------------------
-V07 - BASICS
------------------------------------------
-*/
-
-
-a {
-  color: ;
-}
-
-a:hover {
-  color: ;
-  text-decoration: none;
-}
-
-p {
-  font-size: 12px;
-  line-height: 1.4em;
-  color: ;
-  margin-bottom: 1.2em;
-}
-
-
-/*
------------------------------------------
-V08 - SECONDARY BASICS
------------------------------------------
-*/
-
-blockquote {
-  
-}
-
-hr { 
-  
-}
-
-.button {
-  
-}
-
-.button:hover {
-  
-}
-
-
-
-/*
------------------------------------------
-V09 - BRANDING
------------------------------------------
-*/
-
-
-.site-masthead {
-  position: relative;
-}
-
-.site-logo a {
-
-}
-
-
-
-/*
------------------------------------------
-V10 - NAVIGATION
-Please use the nav element in HTML5
------------------------------------------
-*/
-
-
-.site-masthead ul {
-
-}
-
-.site-masthead li {
-  
-}
-
-.site-masthead li a {
-  
-}
-
-.site-masthead li a:hover {
-  
-}
-
-
-/*
------------------------------------------
-V11 - MODULES
------------------------------------------
-*/
-
-
-
-
-/*
------------------------------------------
-V12 - FOOTER
------------------------------------------
-*/
-
-
-.site-footer {
-
-}
-
-
-
-
-/*
------------------------------------------
-V13 - TABLES
------------------------------------------
-*/
-
-
-table {
-  
-}
-
-thead {
-  
-}
-
-tfoot {
-  
-}
-
-tbody {
-  
-}
-
-tr {
-  
-}
-
-th {
-  
-}
-
-td {
-  
-}
-
-.cell5  {width:5%;}
-.cell10 {width:10%;}
-.cell15 {width:15%;}
-.cell20 {width:20%;}
-.cell25 {width:25%;}
-.cell30 {width:30%;}
-.cell35 {width:35%;}
-.cell40 {width:40%;}
-.cell45 {width:45%;}
-.cell50 {width:50%;}
-.cell55 {width:55%;}
-.cell60 {width:60%;}
-.cell65 {width:65%;}
-.cell70 {width:70%;}
-.cell75 {width:75%;}
-.cell80 {width:80%;}
-.cell85 {width:85%;}
-.cell90 {width:90%;}
-.cell95 {width:95%;}
-
-
-/*
------------------------------------------
-V14 - FORMS
------------------------------------------
-*/
-
-form {
-  margin: 10px 0;
-}
-
-label {
-  
-}
-
-input {
-  
-}
-
-textarea {
-  
-}
-
-select {
-  
-}
-
-option {
-  
-}
-
-input[type="submit"] {
-
-}
-
-::-webkit-input-placeholder { color: #ddd; }
-::-moz-placeholder { color: #ddd; }
-:-ms-input-placeholder { color: #ddd; }
-input:-moz-placeholder { color: #ddd; }
-
-
-
-/*
------------------------------------------
-V15 - GENERICS
+GENERICS
 -----------------------------------------
 */
 
@@ -524,9 +240,10 @@ V15 - GENERICS
 
 /*
 -----------------------------------------
-V16 - MOBILE ADJUSTMENTS
+MOBILE ADJUSTMENTS
 -----------------------------------------
 */
+
 
 a:link {
   -webkit-tap-highlight-color: rgba(0, 0, 0, .2);
@@ -536,32 +253,255 @@ a:link {
 
 /*
 -----------------------------------------
-V17 - Responsive Web Design Queries
+LAYOUT
+-----------------------------------------
+*/
+
+
+.block-content {
+  margin-bottom: 20px;
+}
+
+
+
+/*
+-----------------------------------------
+Fonts
+-----------------------------------------
+*/
+
+
+
+
+/*
+-----------------------------------------
+TYPOGRAPHY
+-----------------------------------------
+*/
+
+
+
+a {
+  color: ;
+}
+
+a:hover {
+  color: ;
+  text-decoration: none;
+}
+
+p {
+  font-size: 12px;
+  line-height: 1.4em;
+  color: ;
+  margin-bottom: 1.2em;
+}
+
+blockquote {
+
+}
+
+hr {
+
+}
+
+
+
+/*
+-----------------------------------------
+BUTTONS
+-----------------------------------------
+*/
+
+
+.button {
+  cursor: pointer;
+  display: inline-block;
+  border: none;
+  -webkit-appearance: none;
+}
+
+.button:hover {
+
+}
+
+
+
+/*
+-----------------------------------------
+TABLES
+-----------------------------------------
+*/
+
+
+table {
+
+}
+
+thead {
+
+}
+
+tfoot {
+
+}
+
+tbody {
+
+}
+
+tr {
+
+}
+
+th {
+
+}
+
+td {
+
+}
+
+.cell5  {width:5%;}
+.cell10 {width:10%;}
+.cell15 {width:15%;}
+.cell20 {width:20%;}
+.cell25 {width:25%;}
+.cell30 {width:30%;}
+.cell35 {width:35%;}
+.cell40 {width:40%;}
+.cell45 {width:45%;}
+.cell50 {width:50%;}
+.cell55 {width:55%;}
+.cell60 {width:60%;}
+.cell65 {width:65%;}
+.cell70 {width:70%;}
+.cell75 {width:75%;}
+.cell80 {width:80%;}
+.cell85 {width:85%;}
+.cell90 {width:90%;}
+.cell95 {width:95%;}
+
+
+
+/*
+-----------------------------------------
+FORMS
+-----------------------------------------
+*/
+
+form {
+  margin: 10px 0;
+}
+
+label {
+
+}
+
+input {
+
+}
+
+textarea {
+
+}
+
+select {
+
+}
+
+option {
+
+}
+
+input[type="submit"] {
+
+}
+
+::-webkit-input-placeholder { color: #ddd; }
+::-moz-placeholder { color: #ddd; }
+:-ms-input-placeholder { color: #ddd; }
+input:-moz-placeholder { color: #ddd; }
+
+
+
+/*
+-----------------------------------------
+MASTHEAD
+-----------------------------------------
+*/
+
+
+.site-masthead {
+
+}
+
+
+
+/*
+-----------------------------------------
+FOOTER
+-----------------------------------------
+*/
+
+
+.site-footer {
+
+}
+
+
+/*
+-----------------------------------------
+MODULES
+-----------------------------------------
+*/
+
+
+
+/*
+-----------------------------------------
+VENDOR
+-----------------------------------------
+*/
+
+
+
+/*
+-----------------------------------------
+VENDOR OVERRIDES
+-----------------------------------------
+*/
+
+
+
+/*
+-----------------------------------------
+Responsive Web Design Queries
 -----------------------------------------
 */
 
 @media only screen and (min-width: 1382px) {
-  
+
 }
 
 @media only screen and (max-width: 992px) {
-  
+
 }
 
 @media only screen and (max-width: 768px) {
-  
+
   .layout-stack-tablet {
     float: none !important;
     width: auto !important;
   }
-  
+
 }
 
 @media only screen and (max-width: 480px) {
-  
+
   .layout-stack-mobile {
     float: none !important;
     width: auto !important;
   }
-  
+
 }

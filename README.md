@@ -1,4 +1,4 @@
-# Vanilla5 v2.2
+# Vanilla5 v2.3
 
 _Copyright Christopher Bishop 2011-2014._
 
@@ -36,6 +36,11 @@ Magic. Seriously, this is a foundation, not a framework. You still have to style
 
 There are a lot of things that Vanilla5 does for you automatically, a lot you have to do yourself. Here are a couple helpers that I have included.
 
+# Using Grunt
+
+Grunt is a Javascript task runner build upon Node.js. This is super helpful for doing things like processing LESS/SCSS, minifying, image optimization, ect. If you are unfamiliar with how to use Grunt visit http://gruntjs.com/getting-started.
+
+The files included are the basics. You still need to know how to install the Grunt CLI and Grunt plugins.
 
 ## Clearing a Float
 
@@ -102,6 +107,16 @@ var trackingID = '',
 ```
 
 #ChangeLog:
+
+####Version 2.3:
+
+* Complete restructure of LESS and SCSS to make it more module
+* Took out Table of Contents
+* Inclusion of Grunt files
+* Updated the size for Apple Touch icon
+* Updated assets for Windows tiles
+* Adds ieconfig.xml for multiple tile assets for Windows
+* Moves app icons into their own folder in the images directory
 
 ####Version 2.2:
 

@@ -14,7 +14,7 @@
   $pxValue: strip-unit($value);
   $baseValue: strip-unit($font-size);
   $remValue: ($pxValue / $baseValue);
-  #{$property}: $value; 
+  #{$property}: $value;
   #{$property}: $remValue + rem;
 }
 
@@ -25,4 +25,3 @@
   -webkit-box-sizing: $sizing;
           box-sizing: $sizing;
 }
-

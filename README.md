@@ -36,7 +36,7 @@ Magic. Seriously, this is a foundation, not a framework. You still have to style
 
 There are a lot of things that Vanilla5 does for you automatically, a lot you have to do yourself. Here are a couple helpers that I have included.
 
-# Using Grunt
+## Using Grunt
 
 Grunt is a Javascript task runner build upon Node.js. This is super helpful for doing things like processing LESS/SCSS, minifying, image optimization, ect. If you are unfamiliar with how to use Grunt visit http://gruntjs.com/getting-started.
 
@@ -69,6 +69,35 @@ You can change px into rems automatically using included LESS or SCSS mixins.
 
 ** ALERT: You have to have the font-size variable set in order for this to work!!** You can find it in your variables file.
 
+**Syntax:**
+
+**For SCSS:**
+
+```css
+@include rem-size($value, $property);
+```
+**For LESS:**
+
+```css
+rem-size(@value, @property);
+```
+
+<table>
+  <tr>
+    <th>Argument</th>
+    <th>Required</th>
+    <th>Default</th>
+  </tr>
+  <tr>
+    <td>Value</td><td>Required</td><td>None</td>
+  </tr>
+  <tr>
+    <td>Property</td><td>Optional</td><td>'font-size'</td>
+  </tr>
+</table>
+
+### Usage
+
 **For SCSS:**
 
 ```css
@@ -90,6 +119,12 @@ p {
   font-size: 2rem; // this value depends on what you have set as your font-size base
 }
 ```
+
+### Controlling Property
+
+By default this mixin will output to font-size. But what if you nees to use the mixin with another propery. The mixin taxes a second argument just for this.
+
+
 
 ---
 

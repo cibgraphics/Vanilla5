@@ -69,7 +69,7 @@ You can change px into rems automatically using included LESS or SCSS mixins.
 
 ** ALERT: You have to have the font-size variable set in order for this to work!!** You can find it in your variables file.
 
-**Syntax:**
+###Syntax:
 
 **For SCSS:**
 

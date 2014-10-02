@@ -154,6 +154,7 @@ var trackingID = '',
 * Updated assets for Windows tiles
 * Adds ieconfig.xml for multiple tile assets for Windows
 * Moves app icons into their own folder in the images directory
+* Changed media query to 1224px instead of 1382
 
 ####Version 2.2:
 

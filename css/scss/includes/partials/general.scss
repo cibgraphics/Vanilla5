@@ -31,12 +31,12 @@ HTML {
   /* Prevents webpage zooming for mobile devices change orientation */
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
+  font-size: $font-size;
 }
 
 BODY {
   font-family: $font-sans;
   background: $base-color;
-  font-size: $font-size;
 }
 
 

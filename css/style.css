@@ -174,11 +174,11 @@ HTML {
   /* Prevents webpage zooming for mobile devices change orientation */
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
+  font-size: 62.5%; /* 1em = 10px */
 }
 
 BODY {
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 62.5%; /* 1em = 10px */
 }
 
 

@@ -1,4 +1,4 @@
-# Vanilla5 v2.3
+# Vanilla5 v2.3.1
 
 _Copyright Christopher Bishop 2011-2014._
 
@@ -144,6 +144,10 @@ var trackingID = '',
 ```
 
 #ChangeLog:
+
+####Version 2.3.1:
+
+* Updated where the font-size is declared for proper calculation of REM Sizing function in LESS and SCSS
 
 ####Version 2.3:
 

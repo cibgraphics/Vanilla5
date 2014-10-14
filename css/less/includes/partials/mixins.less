@@ -65,21 +65,21 @@
 }
 
 // Scale
-.scale(@ratio; @ratio-y) {
+.scale(@ratio: 1; @ratio-y: 1) {
   -webkit-transform: scale(@ratio, @ratio-y);
       -ms-transform: scale(@ratio, @ratio-y); // IE9 only
           transform: scale(@ratio, @ratio-y);
 }
 
 // Translate
-.translate(@x; @y) {
+.translate(@x: 0; @y: 0) {
   -webkit-transform: translate(@x, @y);
       -ms-transform: translate(@x, @y); // IE9 only
           transform: translate(@x, @y);
 }
 
 // Skew
-.skew(@x; @y) {
+.skew(@x: 0; @y: 0) {
   -webkit-transform: skew(@x, @y);
       -ms-transform: skewX(@x) skewY(@y); // IE9 only
           transform: skew(@x, @y);

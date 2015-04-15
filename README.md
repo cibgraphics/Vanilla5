@@ -1,4 +1,4 @@
-# Vanilla5 v2.3.2
+# Vanilla5 v2.3.3
 
 _Copyright Christopher Bishop 2011-2014._
 
@@ -145,9 +145,14 @@ var trackingID = '',
 
 #ChangeLog:
 
+####Version 2.3.3:
+
+* Updates jQuery to current version
+* SCSS partial file name convention
+
 ####Version 2.3.2:
 
-* Gave defaults to some LESS mixins as to not cause errors when being used.
+* Gave defaults to some LESS mixins as to not cause errors when being used
 
 ####Version 2.3.1:
 

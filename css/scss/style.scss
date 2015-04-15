@@ -1,31 +1,31 @@
 /* Bootstrapping */
-@import "includes/partials/normalize.scss";
-@import "includes/partials/variables.scss";
-@import "includes/partials/mixins.scss";
+@import "includes/partials/_normalize.scss";
+@import "includes/partials/_variables.scss";
+@import "includes/partials/_mixins.scss";
 
 
 
 /* Partials */
-@import "includes/partials/general.scss";
-@import "includes/partials/layout.scss";
-@import "includes/partials/fonts.scss";
-@import "includes/partials/typography.scss";
-@import "includes/partials/buttons.scss";
-@import "includes/partials/tables.scss";
-@import "includes/partials/forms.scss";
+@import "includes/partials/_general.scss";
+@import "includes/partials/_layout.scss";
+@import "includes/partials/_fonts.scss";
+@import "includes/partials/_typography.scss";
+@import "includes/partials/_buttons.scss";
+@import "includes/partials/_tables.scss";
+@import "includes/partials/_forms.scss";
 
 
 
 /* Modules */
-@import "includes/modules/masthead.scss";
-@import "includes/modules/footer.scss";
+@import "includes/modules/_masthead.scss";
+@import "includes/modules/_footer.scss";
 
 
 
 /* Vendors */
-@import "includes/vendor/vendor-overrides.scss";
+@import "includes/vendor/_vendor-overrides.scss";
 
 
 
 /* Media Queries */
-@import "includes/media-queries/all.scss";
+@import "includes/media-queries/_all.scss";

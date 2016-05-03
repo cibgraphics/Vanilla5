@@ -124,7 +124,7 @@ p {
 
 ### Controlling Property
 
-By default this mixin will output to font-size. But what if you nees to use the mixin with another propery. The mixin taxes a second argument just for this.
+By default this mixin will output to font-size. If you need to use another property instead of font-size you can pass a 2nd argument with the desired property to the mixin.
 
 
 
@@ -144,6 +144,14 @@ var trackingID = '',
 ```
 
 #ChangeLog:
+
+####Version 2.4:
+
+* Updates jQuery to current version
+* Adds missing SCSS mixins
+* Added 100% max width to images by default
+* Adds Adobe Illustrator Mockup starter
+* Fixed some errors in README
 
 ####Version 2.3.3:
 

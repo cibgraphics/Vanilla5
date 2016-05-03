@@ -1,6 +1,6 @@
 # Vanilla5 v2.4
 
-_Copyright Christopher Bishop 2011-2014._
+_Copyright Christopher Bishop 2011-2016._
 
 ## What is Vanilla5?
 
@@ -217,7 +217,7 @@ var trackingID = '',
 * Change layout position in style sheet
 * Improved Windows 8 tile support
 * iOS icon is now precomposed
-* iOS icon is now 144px v 144px
+* iOS icon is now 144px x 144px
 * Additional helpful mixins
 * Variables for type and font size
 

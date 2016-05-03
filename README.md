@@ -1,4 +1,4 @@
-# Vanilla5 v2.3.3
+# Vanilla5 v2.4
 
 _Copyright Christopher Bishop 2011-2014._
 

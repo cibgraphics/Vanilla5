@@ -4,7 +4,7 @@ _Copyright Christopher Bishop 2011-2016._
 
 ## What is Vanilla5?
 
-Vanilla5 is a HTML5 based foundation to kickstart the majority of your project. Perfectly set up to be HTML5 and mobile ready (responsive design). Also uses LESS and SCSS, but you are not forced to use them.
+Vanilla5 is a HTML5 based foundation to kickstart the majority of your projects. Perfectly set up to be HTML5 and mobile ready (responsive design). Also uses LESS and SCSS, but you are not forced to use them.
 
 ###Features:
 

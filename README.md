@@ -1,4 +1,4 @@
-# Vanilla5 v2.4
+# Vanilla5 v2.4.1
 
 _Copyright Christopher Bishop 2011-2016._
 
@@ -144,6 +144,10 @@ var trackingID = '',
 ```
 
 #ChangeLog:
+
+####Version 2.4.1:
+
+* Updates jQuery to version 3.1.0
 
 ####Version 2.4:
 

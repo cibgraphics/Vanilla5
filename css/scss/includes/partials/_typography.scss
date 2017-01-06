@@ -9,10 +9,10 @@ TYPOGRAPHY
 
 a {
   color: $link-color;
+  text-decoration: none;
 
   &:hover {
     color: $link-hover-light;
-    text-decoration: none;
   }
 }
 

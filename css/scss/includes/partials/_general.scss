@@ -27,35 +27,22 @@ HEAD TAGS
   @include box-sizing();
 }
 
-HTML {
+html, body {
+  height: 100%;
+}
+
+html {
   /* Prevents webpage zooming for mobile devices change orientation */
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   font-size: $font-size;
+  font-family: $font-sans;
 }
 
-BODY {
-  font-family: $font-sans;
+body {
   background: $base-color;
 }
 
-
-/*
------------------------------------------
-MAIN CONTAINERS
------------------------------------------
-*/
-
-
-
-.container {
-  max-width: $site-width;
-  margin: 0 auto;
-}
-
-.content {
-  background: $content-background;
-}
 
 
 /*

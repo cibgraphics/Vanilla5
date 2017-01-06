@@ -170,32 +170,19 @@ HEAD TAGS
   box-sizing: border-box;
 }
 
-HTML {
+html, body {
+  height: 100%;
+}
+
+html {
   /* Prevents webpage zooming for mobile devices change orientation */
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   font-size: 62.5%; /* 1em = 10px */
-}
-
-BODY {
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
-
-
-/*
------------------------------------------
-CONTAINERS
------------------------------------------
-*/
-
-
-.container {
-  max-width: 960px;
-  margin: 0 auto;
-}
-
-.content {
+body {
 
 }
 
@@ -260,6 +247,19 @@ LAYOUT
 -----------------------------------------
 */
 
+main {
+
+}
+
+.container {
+  padding: 0 20px;
+}
+
+.content {
+  main-width: 960px;
+  margin: 0 auto;
+  position: relative;
+}
 
 .block-content {
   margin-bottom: 20px;

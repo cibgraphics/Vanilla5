@@ -1,4 +1,4 @@
-# Vanilla5 v2.4.1
+# Vanilla5 v2.4.2
 
 _Copyright Christopher Bishop 2011-2016._
 
@@ -144,6 +144,13 @@ var trackingID = '',
 ```
 
 #ChangeLog:
+
+####Version 2.4.2:
+
+* Updates jQuery to version 3.1.1
+* Better base layout css
+* Variables set in columns for better reading
+* Layout in general css changed to layout in SCSS/LESS
 
 ####Version 2.4.1:
 

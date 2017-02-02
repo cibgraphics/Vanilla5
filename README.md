@@ -1,6 +1,6 @@
-# Vanilla5 v2.4.2
+# Vanilla5 v2.4.3
 
-_Copyright Christopher Bishop 2011-2016._
+_Copyright Christopher Bishop 2011-2017._
 
 ## What is Vanilla5?
 
@@ -144,6 +144,11 @@ var trackingID = '',
 ```
 
 #ChangeLog:
+
+####Version 2.4.3:
+
+* Changes default font size for paragraphs to be controls by variable
+* Updated copyright date
 
 ####Version 2.4.2:
 

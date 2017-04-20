@@ -1,4 +1,4 @@
-# Vanilla5 v2.4.3
+# Vanilla5 v2.4.4
 
 _Copyright Christopher Bishop 2011-2017._
 
@@ -144,6 +144,11 @@ var trackingID = '',
 ```
 
 #ChangeLog:
+
+####Version 2.4.4:
+
+* Adds rem-size mixin to default paragraphs
+* Fixes misspelling on layout CSS that was causing errors
 
 ####Version 2.4.3:
 

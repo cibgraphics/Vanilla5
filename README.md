@@ -308,7 +308,7 @@ var trackingID = '',
 * Updated both jQuery and jQueryUI
 * Added styles for easy table cell width
 
-####Version 1.1:
+#### Version 1.1:
 
 * Inclusion of LESS Sheet
 

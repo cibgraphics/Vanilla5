@@ -6,7 +6,7 @@ _Copyright Christopher Bishop 2011-2017._
 
 Vanilla5 is a HTML5 based foundation to kickstart the majority of your projects. Perfectly set up to be HTML5 and mobile ready (responsive design). Also uses LESS and SCSS, but you are not forced to use them.
 
-###Features:
+### Features:
 
 * Basic HTML5 template with a header, page contents, and a footer
 * Basic CSS, LESS, or SCSS file set up with CSS reset, mixins, variables, includes (where applicable), and responsive stylesheets.
@@ -69,9 +69,9 @@ ___
 
 You can change px into rems automatically using included LESS or SCSS mixins.
 
-** ALERT: You have to have the font-size variable set in order for this to work!!** You can find it in your variables file.
+__ALERT: You have to have the font-size variable set in order for this to work!!__ You can find it in your variables file.
 
-###Syntax:
+### Syntax:
 
 **For SCSS:**
 

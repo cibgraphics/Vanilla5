@@ -1,0 +1,50 @@
+// Max Site Width
+$site-width:                960px;
+
+// Responsive widths
+$dekstop-xxlarge:           'only screen and (max-width: 1300px)';
+$dekstop-xlarge:            'only screen and (max-width: 1224px)';
+$dekstop-large:             'only screen and (max-width: 1024px)';
+$desktop:                   'only screen and (max-width: 1100px)';
+$tablet-large:              'only screen and (max-width: 992px)';
+$tablet-medium-large:       'only screen and (max-width: 850px)';
+$tablet:                    'only screen and (max-width: 768px)';
+$tablet-medium:             'only screen and (max-width: 720px)';
+$tablet-small:              'only screen and (max-width: 600px)';
+$mobile:                    'only screen and (max-width: 480px)';
+$mobile-small:              'only screen and (max-width: 400px)';
+
+// Main Colors
+$primary:                   #;
+
+// Site Background Color
+$base-color:                #;
+
+// Content Background Color
+$content-background:        #;
+
+// Text Color
+$text-color:                #;
+
+// Link Colors
+$link-color:                #;
+$link-hover-light:          lighten($link-color, 10%);
+$link-hover-dark:           darken($link-color, 10%);
+
+// Input Placeholder Color
+$placeholder-color:         #ddd;
+
+// Fonts
+$font-sans:                 Helvetica Neue, Helvetica, Arial, sans-serif;
+$font-serif:                Georgia, Times, "Times New Roman", serif;
+$font-script:               'Great Vibes', cursive;
+$font-mono:                 'Andale Mono', AndaleMono, monospace;
+
+// Font Size
+$font-size:                 14px;
+$font-size-small:           $font-size - 2;
+$font-size-large:           $font-size + 2;
+
+// User Select (colors when a user selects objects on screen)
+$select-background:         #;
+$select-text:               #;

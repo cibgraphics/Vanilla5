@@ -1,0 +1,101 @@
+/*
+-----------------------------------------
+Background Highlights
+-----------------------------------------
+*/
+
+
+::-moz-selection{
+  background: $select-background;
+  color: $select-text;
+}
+::selection {
+  background: $select-background;
+  color: $select-text;
+}
+
+
+
+/*
+-----------------------------------------
+HEAD TAGS
+-----------------------------------------
+*/
+
+
+* {
+  @include box-sizing();
+}
+
+html, body {
+  height: 100%;
+}
+
+html {
+  /* Prevents webpage zooming for mobile devices change orientation */
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  font-size: $font-size;
+  font-family: $font-sans;
+}
+
+body {
+  background: $base-color;
+}
+
+
+
+/*
+-----------------------------------------
+GENERICS
+-----------------------------------------
+*/
+
+img {
+  max-width: 100%;
+}
+
+.relative {
+  position: relative;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+
+/*
+-----------------------------------------
+MOBILE ADJUSTMENTS
+-----------------------------------------
+*/
+
+
+a:link {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, .2);
+}
+

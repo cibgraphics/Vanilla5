@@ -1,4 +1,4 @@
-# Vanilla5 v2.4.4
+# Vanilla5 v3.0
 
 _Copyright Christopher Bishop 2011-2017._
 
@@ -144,6 +144,17 @@ var trackingID = '',
 ```
 
 # ChangeLog:
+
+#### Version 3.0:
+
+* Moved Javascript, CSS, Fonts and Images to assets folder
+* Updated jQuery to version 3.2.1
+* Improved typography and form styles
+* Added variables for responsive styles
+* Added Sketch file to Creative files
+* updated new path for ieconfig/index for source files
+* New way to test for if jquery is from CDN or not
+
 
 #### Version 2.4.4:
 

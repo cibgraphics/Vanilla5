@@ -1,0 +1,32 @@
+/* Bootstrapping */
+@import "includes/partials/_normalize.scss";
+@import "includes/partials/_variables.scss";
+@import "includes/partials/_mixins.scss";
+
+
+
+/* Partials */
+@import "includes/partials/_animation.scss";
+@import "includes/partials/_general.scss";
+@import "includes/partials/_layout.scss";
+@import "includes/partials/_fonts.scss";
+@import "includes/partials/_typography.scss";
+@import "includes/partials/_buttons.scss";
+@import "includes/partials/_tables.scss";
+@import "includes/partials/_forms.scss";
+
+
+
+/* Modules */
+@import "includes/modules/_masthead.scss";
+@import "includes/modules/_footer.scss";
+
+
+
+/* Vendors */
+@import "includes/vendor/_vendor-overrides.scss";
+
+
+
+/* Media Queries */
+@import "includes/media-queries/_all.scss";

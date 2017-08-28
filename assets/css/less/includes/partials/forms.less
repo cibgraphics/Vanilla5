@@ -1,0 +1,99 @@
+/*
+-----------------------------------------
+FORMS
+-----------------------------------------
+*/
+
+
+form {
+  margin: 10px 0;
+}
+
+label {
+  display: block;
+  .rem-size(15px);
+  color: @text-color;
+  margin-bottom: 10px;
+  line-height: 1.4em;
+}
+
+input, textarea {
+  width: 100%;
+  border: 1px solid darken(@grey-light, 5%);
+  padding: 10px;
+  .rem-size(16px);
+  color: @text-color;
+  border-radius: 5px; // For iOS
+
+  &:disabled {
+    color: @grey-light;
+    background: #fff;
+  }
+}
+
+textarea {
+  min-height: 200px;
+
+  &.small {
+    min-height: 150px;
+  }
+
+  &.large {
+    min-height: 250px;
+  }
+}
+
+select {
+  width: 100%;
+
+  option {
+
+  }
+}
+
+
+::-webkit-input-placeholder { color: @placeholder-color; }
+::-moz-placeholder { color: @placeholder-color; }
+:-ms-input-placeholder { color: @placeholder-color; }
+input:-moz-placeholder { color: @placeholder-color; }
+
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],,
+input[type="file"],
+textarea {
+  -webkit-appearance: none;
+}
+
+input[type="search"] {
+    -webkit-appearance: none;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration  {
+    -webkit-appearance: none;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input[type=number] {
+  -moz-appearance:textfield;
+}
+
+
+/* Form Styles */
+
+.field-group {
+  .clearfix();
+}
+
+.field {
+  margin-bottom: 20px;
+}

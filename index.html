@@ -21,12 +21,12 @@
     <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
     <!-- Stylesheets -->
-    <link href="css/style.css" rel="stylesheet" media="screen" />
-    <link href="css/print.css" rel="stylesheet" media="print" />
+    <link href="assets/css/style.css" rel="stylesheet" media="screen" />
+    <link href="assets/css/print.css" rel="stylesheet" media="print" />
 
     <!-- Appliaction Icons -->
     <link rel="shortcut icon" href="favicon.ico" />
-    <link rel="apple-touch-icon-precomposed" href="images/app-icons/apple-touch-icon.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/images/app-icons/apple-touch-icon.png">
 
   </head>
 
@@ -62,17 +62,13 @@
     </div><!-- End .container -->
 
     <!-- Load jQuery from CDN. If CDN is not available, load from local copy -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script type="text/javascript">
-      if (typeof jQuery == 'undefined') {
-        document.write(unescape("%3Cscript src='js//lib/jquery.js' type='text/javascript'%3E%3C/script%3E"));
-      }
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/req/jquery.js"><\/script>')</script>
 
     <!-- Custom JS -->
-    <script src="js/app.js"></script>
+    <script src="assets/js/app.js"></script>
 
     <!-- Google Anayltics - Modify to enter your tracking code -->
-    <script src="js/lib/google-analytics.js"></script>
+    <script src="assets/js/lib/google-analytics.js"></script>
   </body>
 </html>

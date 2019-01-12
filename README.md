@@ -1,6 +1,6 @@
 # Vanilla5 v4.0
 
-_Copyright Christopher Bishop 2011-2017._
+_Copyright Christopher Bishop 2011-2019._
 
 ## What is Vanilla5?
 

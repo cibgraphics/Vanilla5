@@ -1,0 +1,50 @@
+include ../partials/mixins.pug
+
+doctype html
+html(lang='en-US', dir='ltr')
+  head
+    meta(charset='utf-8')
+    meta(name='description', content='')
+    meta(name='keywords', content='')
+
+    meta(name="robots", content="NOINDEX, NOFOLLOW")
+
+    title Vanilla5 Document
+
+    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+    meta(name='viewport', content='width=device-width, minimum-scale=1, maximum-scale=1')
+    meta(name='format-detection', content='telephone=no')
+    meta(name='application-name', content='Vanilla5 Project')
+    meta(name='msapplication-tooltip', content='Vanilla5')
+    meta(name='msapplication-config', content='/ieconfig.xml')
+
+    // HTML5 Shiv for IE
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+
+    link(href='/assets/css/style.css', rel='stylesheet', media='screen')
+    link(href='/assets/css/print.css', rel='stylesheet', media='print')
+
+    link(rel='shortcut icon', href='/favicon.ico')
+    link(rel='apple-touch-icon-precomposed', href='/assets/images/app-icons/apple-touch-icon.png')
+
+  body#top
+    
+    include ../partials/header.pug
+
+    main
+      block content
+
+    include ../partials/footer.pug
+    
+    // Load jQuery from CDN. If CDN is not available, load from local copy
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+    script.
+      window.jQuery || document.write('<script src="assets/js/req/jquery.js"><\\/script>')
+    
+    // Custom JS
+    script(src='/assets/js/app.js')
+
+    // Google Anayltics - Modify to enter your tracking code
+    script(src='assets/js/lib/google-analytics.js')

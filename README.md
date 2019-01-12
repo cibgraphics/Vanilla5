@@ -179,3 +179,5 @@ var trackingID = '',
 * Updates jQuery
 * Removed old ChangeLog files (Seriously, do you care what I changed in version 0.4?)
 * Adds explanation in Readme on how to use PugJS
+* Fixes gradient mixin
+* Updates package.json

@@ -1,7 +1,18 @@
 {
-  "name": "my-project-name",
-  "version": "0.1.0",
-  "devDependencies": {
-
-  }
+  "name": "vanilla5",
+  "version": "3.1",
+  "author": "Chris Bishop <mechwd@msn.com> (http://cibgraphics.com)",
+  "description": "HTML5 based foundation to kickstart the majority of your projects",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cibgraphics/Vanilla5.git"
+  },
+  "keywords": [
+    "css",
+    "sass",
+    "less",
+    "html5",
+    "framework",
+    "vanilla5"
+  ],
 }

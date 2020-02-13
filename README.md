@@ -139,6 +139,8 @@ p {
 
 By default this mixin will output to font-size. If you need to use another property instead of font-size you can pass a 2nd argument with the desired property to the mixin.
 
+---
+
 ## Media Queries
 
 Media queries have been redone. They are now based off a SCSS Map. The way you call it however has been simplified.

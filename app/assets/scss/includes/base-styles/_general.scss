@@ -99,3 +99,44 @@ a:link {
   -webkit-tap-highlight-color: rgba(0, 0, 0, .2);
 }
 
+
+/*
+-----------------------------------------
+FORM ADJUSTMENTS
+-----------------------------------------
+*/
+
+::-webkit-input-placeholder { color: $placeholder-color; }
+::-moz-placeholder { color: $placeholder-color; }
+:-ms-input-placeholder { color: $placeholder-color; }
+input:-moz-placeholder { color: $placeholder-color; }
+
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],,
+input[type="file"],
+textarea {
+  -webkit-appearance: none;
+}
+
+input[type="search"] {
+    -webkit-appearance: none;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration  {
+    -webkit-appearance: none;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input[type=number] {
+  -moz-appearance:textfield;
+}

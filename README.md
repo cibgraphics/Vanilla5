@@ -1,15 +1,15 @@
-# Vanilla5 v4.0
+# Vanilla5 v5.0
 
 _Copyright Christopher Bishop 2011-2019._
 
 ## What is Vanilla5?
 
-Vanilla5 is a HTML5 based foundation to kick start the majority of your projects. Perfectly set up to be HTML5 and mobile ready (responsive design). Also uses LESS and SCSS, but you are not forced to use them.
+Vanilla5 is a HTML5 based foundation to kick start the majority of your projects. Perfectly set up to be HTML5 and mobile ready (responsive design). Uses SCSS, but you are not forced to use it.
 
 ### Features:
 
 * Basic HTML5 template with a header, page contents, and a footer
-* Basic CSS, LESS, or SCSS file set up with CSS reset, mixins, variables, includes (where applicable), and responsive stylesheets.
+* Basic CSS or SCSS file set up with CSS reset, mixins, variables, includes (where applicable), and responsive stylesheets.
 * Print stylesheet included
 * Links to the latest jQuery (local and CDN)
 * Folders setup for you
@@ -47,7 +47,7 @@ The files included are the basics. You still need to know how to install the Gru
 
 PugJS is a template engine influenced by Haml. It is built upon JavaScript for Node.js. If you have yet to use it, please try it out. It is awesome.
 
-The concept is you have pug files in the `app` folder along with your SCSS/LESS files and using Grunt (or something else of your choosing) to compile out the files to the `build` folder and running your project from there.
+The concept is you have pug files in the `app` folder along with your SCSS files and using Grunt (or something else of your choosing) to compile out the files to the `build` folder and running your project from there.
 
 You can install PugJS through NPM with:
 
@@ -83,14 +83,14 @@ Included in Vanilla5 is a progressive way to clear floats. All it uses is a sing
 
 ___
 
-## LESS or SCSS Variables
+## SCSS Variables
 
-Vanilla5 is already set up with some cool variables. You can find these in the css -> less -> includes -> variables.less or css -> scss -> includes -> variables.scss
+Vanilla5 is already set up with some cool variables. You can find these in  css -> scss -> includes -> variables.scss
 
 Make sure you edit these instead of taking out their references. They can be really useful.
 ___
 
-## Automatic REM conversion using LESS or SCSS
+## Automatic REM conversion SCSS
 
 You can change px into rems automatically using included LESS or SCSS mixins.
 
@@ -102,11 +102,6 @@ __ALERT: You have to have the font-size variable set in order for this to work!!
 
 ```css
 @include rem-size($value, $property);
-```
-**For LESS:**
-
-```css
-rem-size(@value, @property);
 ```
 
 <table>
@@ -132,13 +127,6 @@ p {
   @include rem-size(20px);
 }
 ```
-**For LESS:**
-
-```css
-p {
-  .rem-size(20px);
-}
-```
 Compiles to:
 ```css
 p {
@@ -151,7 +139,41 @@ p {
 
 By default this mixin will output to font-size. If you need to use another property instead of font-size you can pass a 2nd argument with the desired property to the mixin.
 
+## Media Queries
 
+Media queries have been redone. They are now based off a SCSS Map. The way you call it however has been simplified.
+
+**For SCSS:**
+
+```css
+@include mq('tablet') {
+
+}
+```
+Compiles to:
+```css
+@media only screen and (max-width: 768px) {
+
+}
+```
+
+If you would like to use min-width instead, just pass it through as a second argument.
+
+**For SCSS:**
+
+```css
+@include mq('tablet', 'min') {
+
+}
+```
+Compiles to:
+```css
+@media only screen and (min-width: 769px) {
+
+}
+```
+
+Please note that the breakpoint value has automatically raised by 1px. You you would like to change this or the default min/max, feel free to update it to your preference. It can be found in _variables.scss
 
 ---
 
@@ -169,6 +191,16 @@ var trackingID = '',
 ```
 
 # ChangeLog:
+
+#### Version 5.0:
+
+* Removes LESS (use SCSS instead)
+* Moves form basics to general.scss
+* Removes mixins prefixes (use autoprefixer)
+* Updates jQuery to 3.4.1
+* Restructure to variables.scss
+* New media query system (uses maps) and new names for breakpoints
+* Adds spacing variables
 
 #### Version 4.0:
 

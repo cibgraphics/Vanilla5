@@ -178,7 +178,7 @@ html {
   /* Prevents webpage zooming for mobile devices change orientation */
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  font-size: 62.5%; /* 1em = 10px */
+  font-size: 16px;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
@@ -225,6 +225,11 @@ img {
 .bold {
   font-weight: bold;
 }
+
+::-webkit-input-placeholder { color: #ddd; }
+::-moz-placeholder { color: #ddd; }
+:-ms-input-placeholder { color: #ddd; }
+input:-moz-placeholder { color: #ddd; }
 
 
 
@@ -421,11 +426,6 @@ input[type="submit"] {
 
 }
 
-::-webkit-input-placeholder { color: #ddd; }
-::-moz-placeholder { color: #ddd; }
-:-ms-input-placeholder { color: #ddd; }
-input:-moz-placeholder { color: #ddd; }
-
 
 
 /*
@@ -483,7 +483,7 @@ Responsive Web Design Queries
 -----------------------------------------
 */
 
-@media only screen and (min-width: 1382px) {
+@media only screen and (min-width: 1024px) {
 
 }
 

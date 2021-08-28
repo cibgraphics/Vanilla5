@@ -18,11 +18,6 @@ html(lang='en-US', dir='ltr')
     meta(name='msapplication-tooltip', content='Vanilla5')
     meta(name='msapplication-config', content='/ieconfig.xml')
 
-    // HTML5 Shiv for IE
-    <!--[if lt IE 9]>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <![endif]-->
-
     link(href='/assets/css/style.css', rel='stylesheet', media='screen')
     link(href='/assets/css/print.css', rel='stylesheet', media='print')
 
@@ -39,7 +34,7 @@ html(lang='en-US', dir='ltr')
     include ../partials/footer.pug
     
     // Load jQuery from CDN. If CDN is not available, load from local copy
-    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js')
     script.
       window.jQuery || document.write('<script src="assets/js/req/jquery.js"><\\/script>')
     

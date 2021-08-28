@@ -4,17 +4,67 @@ LAYOUT
 -----------------------------------------
 */
 
+
+/* Margin and Padding */
+$baseSize: 0;
+
+@while $baseSize <= 64 {
+  .m-#{$baseSize} {
+    margin: #{$baseSize}px !important;
+  }
+
+  .mt-#{$baseSize} {
+    margin-top: #{$baseSize}px !important;
+  }
+
+  .mr-#{$baseSize} {
+    margin-right: #{$baseSize}px !important;
+  }
+
+  .mb-#{$baseSize} {
+    margin-bottom: #{$baseSize}px !important;
+  }
+
+  .ml-#{$baseSize} {
+    margin-left: #{$baseSize}px !important;
+  }
+
+  .p-#{$baseSize} {
+    padding: #{$baseSize}px !important;
+  }
+
+  .pt-#{$baseSize} {
+    padding-top: #{$baseSize}px !important;
+  }
+
+  .pr-#{$baseSize} {
+    padding-right: #{$baseSize}px !important;
+  }
+
+  .pb-#{$baseSize} {
+    padding-bottom: #{$baseSize}px !important;
+  }
+
+  .pl-#{$baseSize} {
+    padding-left: #{$baseSize}px !important;
+  }
+
+  // Increment the counter
+  $baseSize: $baseSize + 4;
+}
+
+
 main {
 
 }
 
 .container {
   padding: 0 20px;
-  background: $content-background;
+  background: var(--content-background);
 }
 
 .content {
-  max-width: $site-width;
+  max-width: var(--site-width);
   margin: 0 auto;
   position: relative;
 }

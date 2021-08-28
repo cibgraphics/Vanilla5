@@ -8,19 +8,19 @@ TYPOGRAPHY
 /*  Basics */
 
 a {
-  color: $link-color;
+  color: var(--link-color);
   @include transition();
   text-decoration: none;
 
   &:hover {
-    color: $link-hover-light;
+    
   }
 }
 
 p {
   @include rem-size($font-size);
   line-height: 1.4em;
-  color: $text-color;
+  color: var(--text-color);
   margin-bottom: 1.2em;
 }
 
@@ -36,6 +36,6 @@ hr {
 /* Headers */
 
 h1, h2, h3, h4, h5, h6 {
-  color: $text-color;
+  color: var(--text-color);
   line-height: 1.4em;
 }

@@ -1,4 +1,4 @@
-# Vanilla5 v5.0
+# Vanilla5 v6.0
 
 _Copyright Christopher Bishop 2011-2019._
 
@@ -15,7 +15,6 @@ Vanilla5 is a HTML5 based foundation to kick start the majority of your projects
 * Folders setup for you
 * iOS touch icon and Windows Tile included and setup
 * PSD included based on the 960grid.
-* Javascript and CSS to fix HTML5 support for IE
 * Set up for Google Analytics
 * Can be based on PugJS
 
@@ -154,23 +153,23 @@ Media queries have been redone. They are now based off a SCSS Map. The way you c
 ```
 Compiles to:
 ```css
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 769px) {
 
 }
 ```
 
-If you would like to use min-width instead, just pass it through as a second argument.
+If you would like to use max-width instead, just pass it through as a second argument.
 
 **For SCSS:**
 
 ```css
-@include mq('tablet', 'min') {
+@include mq('tablet', 'max') {
 
 }
 ```
 Compiles to:
 ```css
-@media only screen and (min-width: 769px) {
+@media only screen and (max-width: 768px) {
 
 }
 ```
@@ -194,6 +193,19 @@ var trackingID = '',
 
 # ChangeLog:
 
+#### Version 6.0:
+
+* NEW! Converts SCSS variables to CSS custom properties. This has no IE support. If you need IE support please use SCSS variables
+* Removed HTML5 Shiv. This shouldn't be needed anymore.
+* Updates jQuery to 3.6.0
+* all lists will not have styled removed. Use class `list-unstyled` for that now.
+* Table cell width classes have hyphen in it to make it cleaner and easier to read.
+* Adds classes for margin and padding in each direction based on 4px increments.
+* Base CSS colors for general purposes
+* Breakpoint mixin is now mobile first
+* Removes style sheets for just media queries
+* Some Pug mixins use loops to be faster
+
 #### Version 5.0:
 
 * Removes LESS (use SCSS instead)
@@ -203,15 +215,3 @@ var trackingID = '',
 * Restructure to variables.scss
 * New media query system (uses maps) and new names for breakpoints
 * Adds spacing variables
-
-#### Version 4.0:
-
-* Introduces Pug
-* File restructure to accommodate Pug development (or not)
-* SCSS/LESS file restructure to something more meaningful
-* Slight changes to base HTML
-* Updates jQuery
-* Removed old ChangeLog files (Seriously, do you care what I changed in version 0.4?)
-* Adds explanation in Readme on how to use PugJS
-* Fixes gradient mixin
-* Updates package.json

@@ -6,12 +6,12 @@ Background Highlights
 
 
 ::-moz-selection{
-  background: $select-background;
-  color: $select-text;
+  background: var(--select-background);
+  color: var(--select-text);
 }
 ::selection {
-  background: $select-background;
-  color: $select-text;
+  background: var(--select-background);
+  color: var(--select-text);
 }
 
 
@@ -35,12 +35,12 @@ html {
   /* Prevents webpage zooming for mobile devices change orientation */
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  font-size: $font-size;
-  font-family: $font-sans;
+  font-size: var(--font-size);
+  font-family: var(--font);
 }
 
 body {
-  background: $base-color;
+  background: var(--base-color);
 }
 
 
@@ -106,10 +106,10 @@ FORM ADJUSTMENTS
 -----------------------------------------
 */
 
-::-webkit-input-placeholder { color: $placeholder-color; }
-::-moz-placeholder { color: $placeholder-color; }
-:-ms-input-placeholder { color: $placeholder-color; }
-input:-moz-placeholder { color: $placeholder-color; }
+::-webkit-input-placeholder { color: var(--placeholder-color); }
+::-moz-placeholder { color: var(--placeholder-color); }
+:-ms-input-placeholder { color: var(--placeholder-color); }
+input:-moz-placeholder { color: var(--placeholder-color); }
 
 
 input[type="text"],

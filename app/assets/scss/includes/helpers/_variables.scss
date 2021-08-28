@@ -4,7 +4,9 @@ WIDTHS
 -----------------------------------------
 */
 
-$site-width:                960px;
+:root {
+  --site-width:             1200px;
+}
 
 
 /*
@@ -13,29 +15,73 @@ COLORS
 -----------------------------------------
 */
 
-// Main Colors
-$primary:                   #;
+:root {
 
-// Site Background Color
-$base-color:                #;
+  // NEUTRAL
+  --white:                  #fff;
+  --black:                  #000;
 
-// Content Background Color
-$content-background:        #;
+  // Grays
 
-// Text Color
-$text-color:                #;
+  --gray-03:                #F4F4F4;
+  --gray-06:                #EEE;
+  --gray-10:                #DDD;
+  --gray-20:                #CCC;
+  --gray-30:                #BBB;
+  --gray-40:                #999;
+  --gray-45:                #888;
+  --gray-50:                #767676; // Light Text
+  --gray-60:                #555;
+  --gray-70:                #444;
+  --gray-80:                #313131; // Base Text
+  --gray-85:                #262626;
+  --gray-90:                #1F1F1F;
+  --gray-92:                #181818;
+  --gray-95:                #111;
 
-// Link Colors
-$link-color:                #;
-$link-hover-light:          lighten($link-color, 10%);
-$link-hover-dark:           darken($link-color, 10%);
+  // System Colors
 
-// Input Placeholder Color
-$placeholder-color:         #ddd;
+  --info-05:                #E9F9FF;
+  --info-10:                #84C2D9;
+  --info-20:                #3A9FC7;
+  --info-50:                #177DA6;
+  --info-80:                #005E82;
 
-// User Select (colors when a user selects objects on screen)
-$select-background:         #;
-$select-text:               #;
+  --success-05:             #E4FFED;
+  --success-10:             #79E09A;
+  --success-20:             #40A861;
+  --success-50:             #098731;
+  --success-80:             #11662C;
+
+  --warn-05:                #FFF3E1;
+  --warn-10:                #F5BE71;
+  --warn-20:                #E08504;
+  --warn-50:                #B56F0D;
+  --warn-80:                #875608;
+
+  --error-05:               #FFEBEB;
+  --error-10:               #F89094;
+  --error-20:               #F05157;
+  --error-50:               #D42228;
+  --error-80:               #AD050B;
+
+  --primary:                #;
+
+
+  --base-color:             #;
+  --content-background      #;
+
+  // Text
+  --text-color:             var(--gray-80);
+  --link-color:             var(--primary);
+
+
+  // User Select (colors when a user selects objects on screen)
+  --select-background:      var(--primary);
+  --select-text:            var(--white);
+}
+
+
 
 
 /*
@@ -45,16 +91,18 @@ SPACING
 */
 
 
-$space:                     20px;
-$space-xxxs:                0.25 * $space;
-$space-xxs:                 0.375 * $space;
-$space-xs:                  0.5 * $space;
-$space-sm:                  0.75 * $space;
-$space-md:                  1.25 * $space;
-$space-lg:                  1.5 * $space;
-$space-xl:                  2 * $space;
-$space-xxl:                 2.5 * $space;
-$space-xxxl:                3 * $space;
+:root {
+  --space:                  20px;
+  --space-xxxs:             calc(0.25 * var(--space));
+  --space-xxs:              calc(0.375 * var(--space));
+  --space-xs:               calc(0.5 * var(--space));
+  --space-sm:               calc(0.75 * var(--space));
+  --space-md:               calc(1.25 * var(--space));
+  --space-lg:               calc(1.5 * var(--space));
+  --space-xl:               calc(2 * var(--space));
+  --space-xxl:              calc(2.5 * var(--space));
+  --space-xxxl:             calc(3 * var(--space));
+}
 
 
 /*
@@ -64,15 +112,11 @@ FONTS
 */
 
 // Font Family
-$font-sans:                 Helvetica Neue, Helvetica, Arial, sans-serif;
-$font-serif:                Georgia, Times, "Times New Roman", serif;
-$font-script:               'Great Vibes', cursive;
-$font-mono:                 'Andale Mono', AndaleMono, monospace;
+:root {
+  --font:                   Helvetica Neue, Helvetica, Arial, sans-serif;;
+}
 
-// Font Size
-$font-size:                 16px;
-$font-size-small:           $font-size - 2;
-$font-size-large:           $font-size + 2;
+$font-size:                 16px; // This is a SCSS variable for the mixin function
 
 
 /*
@@ -93,7 +137,7 @@ $breakpoints: (
     "phone-small":          400px
 );
 
-@mixin mq($width, $type: max) {
+@mixin mq($width, $type: min) {
   @if map_has_key($breakpoints, $width) {
     $width: map_get($breakpoints, $width);
     @if $type == min {

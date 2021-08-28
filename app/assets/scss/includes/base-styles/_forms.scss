@@ -12,7 +12,7 @@ form {
 label {
   display: block;
   @include rem-size(15px);
-  color: $text-color;
+  color: var(--text-color);
   margin-bottom: 10px;
   line-height: 1.4em;
 }
@@ -22,7 +22,7 @@ input, textarea {
   border: 1px solid #333;
   padding: 10px;
   @include rem-size(16px);
-  color: $text-color;
+  color: var(--text-color);
   border-radius: 5px; // For iOS
 
   &:disabled {

@@ -201,13 +201,13 @@ var trackingID = '',
 * NEW! Adds Grixlex grid system (https://gridlex.devlint.fr/)
 * Removed HTML5 Shiv. This shouldn't be needed anymore.
 * Updates jQuery to 3.6.0
-* all lists will not have styled removed. Use class `list-unstyled` for that now.
+* All lists will not have styled removed. Use class `list-unstyled` for that now.
 * Table cell width classes have hyphen in it to make it cleaner and easier to read.
 * Adds classes for margin and padding in each direction based on 4px increments.
 * Base CSS colors for general purposes
 * Breakpoint mixin is now mobile first
 * Removes style sheets for just media queries
-* Some Pug mixins use loops to be faster
+* Some Pug mixins use loops to be faster and lighter
 
 #### Version 5.0:
 

@@ -80,6 +80,8 @@ Included in Vanilla5 is a progressive way to clear floats. All it uses is a sing
 </div>
 ```
 
+It should be noted however that there are better ways to create layouts than using floats such as Flexbox, and CSS Grid. It is preferred that you use those instead.
+
 ___
 
 ## CSS Custom Properties

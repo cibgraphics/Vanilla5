@@ -1,4 +1,4 @@
-# Vanilla5 v6.0
+# Vanilla5 v6.1
 
 _Copyright Christopher Bishop 2011-2019._
 
@@ -82,9 +82,9 @@ Included in Vanilla5 is a progressive way to clear floats. All it uses is a sing
 
 ___
 
-## SCSS Variables
+## CSS Custom Properties
 
-Vanilla5 is already set up with some cool variables. You can find these in  css -> scss -> includes -> variables.scss
+Vanilla5 is already set up with some cool CSS custom properties (aka CSS variables). You can find these in  css -> scss -> includes -> variables.scss
 
 Make sure you edit these instead of taking out their references. They can be really useful.
 ___
@@ -193,9 +193,10 @@ var trackingID = '',
 
 # ChangeLog:
 
-#### Version 6.0:
+#### Version 6.1:
 
 * NEW! Converts SCSS variables to CSS custom properties. This has no IE support. If you need IE support please use SCSS variables
+* NEW! Adds Grixlex grid system (https://gridlex.devlint.fr/)
 * Removed HTML5 Shiv. This shouldn't be needed anymore.
 * Updates jQuery to 3.6.0
 * all lists will not have styled removed. Use class `list-unstyled` for that now.
